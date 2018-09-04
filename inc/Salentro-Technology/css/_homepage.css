@@ -1,0 +1,80 @@
+
+/* image scroller
+---------------------------------------------------------------------------- */
+
+#style2_car1 {  float: left;  width: 570px;  height: 220px;   position: relative; border:1px solid #ccc;}
+#style2 .container {  float: left;  width: 502px;  height: 210px;  position: relative;    overflow: hidden;}
+#style2 ul {  margin: 0;  padding:0;  width: 100000px;  position: relative;  top: 0;  left: 0;  height: 70px; margin-top:11px;}          
+#style2 ul li {  width: 105px;  height: 200px;  text-align: center;   list-style:none;     float:left; margin-left:10px; margin-right:10px;}
+#style2 ul li img { border:1px solid #ccc;}
+#style2 .previous_button {  float:left;   width: 34px;  height: 213px;  background: url(../../inc/exe/IM/inc/horizontal/ho2.jpg);  z-index: 100;  cursor: pointer;}
+#style2 .previous_button_over {  background: url(../../inc/exe/IM/inc/horizontal/ho2a.jpg);}
+#style2 .previous_button_disabled {  background: url(../../inc/exe/IM/inc/horizontal/ho2b.jpg);  cursor: default;}
+#style2 .next_button {  float:left;    width: 34px;  height: 213px;  background: url(../../inc/exe/IM/inc/horizontal/ho1.jpg);  z-index: 100;  cursor: pointer;}
+#style2 .next_button_over {  background: url(../../inc/exe/IM/inc/horizontal/ho1a.jpg);}
+#style2 .next_button_disabled {  background: url(../../inc/exe/IM/inc/horizontal/ho1b.jpg);  cursor: default;}
+
+#style3 { width: 875px; }
+#style3_car1 {  float: left;  width: 870px;  height: 220px;   position: relative; border:1px solid #ccc;}
+#style3 .container {  float: left;  width: 802px;  height: 210px;  position: relative;    overflow: hidden;}
+#style3 ul {  margin: 0;  padding:0;  width: 100000px;  position: relative;  top: 0;  left: 0;  height: 70px; margin-top:11px;}          
+#style3 ul li {  width: 105px;  height: 200px;  text-align: center;   list-style:none;     float:left; margin-left:10px; margin-right:10px;}
+#style3 ul li img { border:1px solid #ccc;}
+#style3 .previous_button {  float:left;   width: 34px;  height: 213px;  background: url(../../inc/exe/IM/inc/horizontal/ho2.jpg);  z-index: 100;  cursor: pointer;}
+#style3 .previous_button_over {  background: url(../../inc/exe/IM/inc/horizontal/ho2a.jpg);}
+#style3 .previous_button_disabled {  background: url(../../inc/exe/IM/inc/horizontal/ho2b.jpg);  cursor: default;}
+#style3 .next_button {  float:left;    width: 34px;  height: 213px;  background: url(../../inc/exe/IM/inc/horizontal/ho1.jpg);  z-index: 100;  cursor: pointer;}
+#style3 .next_button_over {  background: url(../../inc/exe/IM/inc/horizontal/ho1a.jpg);}
+#style3 .next_button_disabled {  background: url(../../inc/exe/IM/inc/horizontal/ho1b.jpg);  cursor: default;}
+
+
+#style4_car1 {  float: left;  width: 470px;  height: 150px;   position: relative; border:1px solid #ccc;  }
+#style4 .container {  float: left;  width: 402px;  height: 150px;  position: relative;    overflow: hidden;}
+#style4 ul {  margin: 0;  padding:0;  width: 100000px;  position: relative;  top: 0;  left: 0;  height: 70px; margin-top:11px;}          
+#style4 ul li {  width: 110px;  height: 150px;  text-align: center;   list-style:none;     float:left; margin-left:10px; margin-right:10px;}
+#style4 ul li img { border:1px solid #ccc;}
+#style4 .previous_button {  float:left;   width: 34px;  height: 113px;  background: url(../../inc/exe/IM/inc/horizontal/ho2.jpg);  z-index: 100;  cursor: pointer;}
+#style4 .previous_button_over {  background: url(../../inc/exe/IM/inc/horizontal/ho2a.jpg);}
+#style4 .previous_button_disabled {  background: url(../../inc/exe/IM/inc/horizontal/ho2b.jpg);  cursor: default;}
+#style4 .next_button {  float:left;    width: 34px;  height: 113px;  background: url(../../inc/exe/IM/inc/horizontal/ho1.jpg);  z-index: 100;  cursor: pointer;}
+#style4 .next_button_over {  background: url(../../inc/exe/IM/inc/horizontal/ho1a.jpg);}
+#style4 .next_button_disabled {  background: url(../../inc/exe/IM/inc/horizontal/ho1b.jpg);  cursor: default;}
+
+
+/* image scroller
+---------------------------------------------------------------------------- */
+
+.qs { color:#284180;}
+#home_welcome_image { margin-top:-1px; width:850px;  background: transparent url('../../../images/v8_1/h3.jpg'); }
+
+/* STYLE 4 */
+
+#s5_searchbox { margin-left:10px;margin-top:10px; color:white;}
+.s5_index { padding-top:10px;margin-left:15px;color:white; font-size:18px; font-weight:bold;}
+.home_style4_h1 { font-size:26px;}
+.home_style4_p { line-height:27px;}
+
+/* image rotating styles
+---------------------------------------------------------------------------- */
+
+.sliderwrapper0 {position: relative; overflow: hidden; border: 10px solid navy;border-bottom-width: 6px;width: 600px; min-height: 200px;}
+.sliderwrapper0 .contentdiv0{visibility: hidden; position: absolute;left: 0;  top: 0; background: white;height: 100%;filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);-moz-opacity: 1;opacity: 1;}
+.pagination0{width: 470px; text-align: right;background-color: navy;padding: 5px 10px;}
+.pagination0 a{padding: 0 5px;text-decoration: none; color: #00007D;background: white;}
+.pagination0 a:hover, .pagination0 a.selected{color: #000;background-color: #FEE496;}
+.sliderwrapper {position: relative; overflow: hidden; width: 412px; height: 267px;  float:right;   }
+.sliderwrapper .contentdiv{visibility: hidden; position: absolute;left: 0;  top: 0; background: white; }
+.pagination{text-align: left; float:left; }
+.pagination p { margin:0px; margin-top:10px; margin-bottom:5px; padding:0px; font-weight:bold; font-size:12px;}
+.pagination small { color: #ffffff;}
+.pagination a  { margin-top:0px; }
+.pagination a  { margin-top:-10px; }
+.pagination a  { padding: 0 5px;text-decoration: none;  color:#333333; width: 160px; height:67px; display:block; background: #C2C0C1 url('../../images/DEFAULT/_acc/home_style2_page_bg.jpg') repeat-x;}
+.pagination a:hover, .pagination a.selected{ background: #C41616; color:white;}
+.sliderwrapper1 {position: relative; overflow: hidden; border: 10px solid navy;border-bottom-width: 6px;width: 470px; height: 200px;}
+.sliderwrapper1 .contentdiv1{visibility: hidden; position: absolute;left: 0;  top: 0; background: white;height: 100%;filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);-moz-opacity: 1;opacity: 1;}
+.pagination1{width: 470px; text-align: right;background-color: navy;padding: 5px 10px;}
+.pagination1 a{padding: 0 5px;text-decoration: none; color: #00007D;background: white;}
+.pagination1 a:hover, .pagination1 a.selected{color: #000;background-color: #FEE496;}
+
+h1 { line-height:28px; }

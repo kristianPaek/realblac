@@ -1,0 +1,28 @@
+<script type="text/javascript" src="{$main_url}/templates/form.js"></script>
+<script type="text/javascript">
+<!--
+var l_accessDenied='{$l_accessDenied}';
+var l_quoteMsgAlert='{$l_quoteMsgAlert}';
+//-->
+</script>
+
+<div align=center>
+<form name=postMsg action="{$main_url}/{$indexphp}" method=post class=formStyle>
+<table class=forums>
+<INPUT TYPE=HIDDEN NAME=action VALUE=editmsg2 class="hidden">
+<INPUT TYPE=HIDDEN NAME=forum VALUE="{$forum}" class="hidden">
+<INPUT TYPE=HIDDEN NAME=topic VALUE="{$topic}" class="hidden">
+<INPUT TYPE=HIDDEN NAME=post VALUE="{$post}" class="hidden">
+<INPUT TYPE=HIDDEN NAME=page VALUE="{$page}" class="hidden">
+<INPUT TYPE=HIDDEN NAME=anchor VALUE="{$anchor}" class="hidden">
+<input type="hidden" name="StopConfigStrip" value="1">
+
+{$mainPostForm}
+
+<tr><td class=caption5>
+<INPUT TYPE=SUBMIT VALUE="{$l_edit}" class=inputButton>
+</td>
+</tr>
+</table>
+</form>
+</div>

@@ -1,0 +1,55 @@
+/* CSS Document */
+.html, body {
+overflow-x:hidden;
+}
+body {
+background-color: #EDF1FA;
+scrollbar-face-color: #ffffff;
+scrollbar-highlight-color: #B1B3BD; 
+scrollbar-track-color: #F6F6F7; 
+scrollbar-arrow-color: #698AAC;
+scrollbar-shadow-color: #ECECEC;
+scrollbar-3dlight-color: #ECECEC;
+scrollbar-darkshadow-color: #B1B3BD;
+font-family: Verdana, Arial;
+font-size: 12px;
+font-style: normal;
+}
+.disconnect_button { margin-top:5px;
+background-color: #EFEFEF;
+border: 1px solid #84B2DE;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+height: 30px;
+width: 100px;
+cursor: pointer;float:left;
+}
+
+ul.IM_OPTIONS {	margin: 0;		padding: 0px;		list-style: none;  }
+.IM_OPTIONS li {	width:25px; float:left; }
+.IM_OPTIONS li a {	text-decoration: none; }
+.search_display_on { background:#eeeeee;}
+.search_display_off { background:transparent;}
+.im_window {
+border: 1px solid #84B2DE;
+width: 98%; 
+padding-left:0px; 
+padding-top:0px; 
+padding-right:0px; 
+padding-bottom:0px;
+overflow:auto; 
+height:370px;
+background: #ffffff url('../../inc/images/background.png') bottom right no-repeat;
+}
+.imspan { display:block; height: 60px; width:210px; overflow:hidden;}
+.fleft { float:left;  width:60px;  margin-left:10px;}
+.fright { float:left; width:100px;}
+.bg1 { background:#eeeeee; }
+.bg2 { background:#ffffff; }
+
+.username a { margin-top:5px; margin-bottom:4px;font-weight:bold; color:#666666; text-decoation:none; overflow:hidden;}
+.info { font-size:11px; overflow:hidden;margin-bottom:4px;}
+#c_reload, #c_reload2 { float:left; color:#666666;padding:5px;margin-top:6px;}

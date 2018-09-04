@@ -1,0 +1,88 @@
+<script type="text/javascript" src="{$main_url}/templates/form.js"></script>
+<script type="text/javascript">
+<!--
+var l_accessDenied='{$l_accessDenied}';
+var l_quoteMsgAlert='{$l_quoteMsgAlert}';
+//-->
+function toggleLayer( whichLayer )
+{
+  var elem, vis;
+  if( document.getElementById ) 
+    elem = document.getElementById( whichLayer );
+  else if( document.all ) 
+      elem = document.all[whichLayer];
+  else if( document.layers ) 
+    elem = document.layers[whichLayer];
+  vis = elem.style;
+
+  if(vis.display==''&&elem.offsetWidth!=undefined&&elem.offsetHeight!=undefined)    vis.display = (elem.offsetWidth!=0&&elem.offsetHeight!=0)?'block':'none';  vis.display = (vis.display==''||vis.display=='block')?'none':'block';
+}
+</script>
+
+
+
+<div id="MakePost" style="display:none;">
+
+<table class=tbTransparent>
+<tr><td class=tbTransparent><span class=txtSm><b>{$pageNav}</b></span></td></tr>
+</table>
+
+<a name=newtopic></a>
+<form action="{$main_url}/{$indexphp}" name=postMsg method=post class=formStyle>
+<table class=forums>
+<tr>
+<td class=caption2>
+
+ {$l_new_topic}</td>
+</tr>
+<tr>
+<td class=caption5>
+<INPUT TYPE=HIDDEN NAME=action VALUE=ptopic class="hidden">
+<INPUT TYPE=HIDDEN NAME=forum VALUE="{$forum}" class="hidden">
+<input type="hidden" name="StopConfigStrip" value="1">
+<INPUT TYPE=TEXT NAME=topicTitle SIZE=38 MAXLENGTH={$topic_max_length} class=textForm tabindex=1 style="width:450px;" class="hidden">
+</td>
+</tr>
+
+{$mainPostForm}
+
+<tr>
+<td class=caption5>
+<INPUT TYPE=SUBMIT VALUE="{$l_sub_post_tpc}" class=inputButton tabindex=5 onClick="JavaScript:this.disabled=true;document.forms['postMsg'].submit();">
+</td>
+</tr>
+</table>
+<br>
+</form>
+</div>
+
+
+</div>
+
+
+
+<table class=tbTransparent>
+<tr><td class=tbTransparent><span class=txtSm><b>{$pageNav}</b></span></td></tr>
+</table>
+
+<table class=forums>
+<tr>
+<td class=caption4> {$myId} </td>
+<td class=caption4> <div align="left"> {$l_topic} </div></td>
+<td width="40" align=center class=caption4>{$l_replies}</td>
+
+</tr>
+
+{$list_topics}
+
+</table>
+
+
+<table class=forums>
+<tr>
+<td width=25 class=caption3 align=center><img src="{$main_url}/img/!pix.gif" width=4 height=1 alt=""><img src="{$main_url}/img/!pix.gif" width=5 height=1 alt=""></td>
+<td valign=top class=caption3><b><a href="{$main_url}/{$indexphp}">{$sitename}</a></b> / <b>{$forumName}</b></td>
+<td align=right valign=top width="40%" class=caption3><span class=txtSm style="white-space:nowrap;">{$l_sortedBy}&nbsp;{$sortedByT}.&nbsp;<a href="{$main_url}/{$indexphp}action=vtopic&amp;forum={$forum}&amp;sortBy={$sortByNew}">{$l_sortBy}&nbsp;{$sortByT}</a></span></td>
+</tr>
+</table>
+

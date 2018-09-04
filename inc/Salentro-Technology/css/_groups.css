@@ -1,0 +1,105 @@
+/* CSS Document */
+
+.gcatleft, .gcatright{  width:307px;  float:left;  margin-right:23px; margin-left:10px;}
+* html .cgatleft, * html .gcatright{  height:60px;  }
+
+.gcatright{  margin:0 0 0 1px;  }
+.cat_c_block p {  line-height: 1.4em;  margin: 0px 0px 0px 0px;  padding: 0px 0px 0px 0px;  }
+
+.gcatleft a, .gcatright a{ color:#333; line-height:30px;}
+
+/**************************/
+/* PAGE LAYOUT	
+/**************************/
+.innercl_settings { font-weight: bold; }
+.innercl_settingsinfo{width:50%;vertical-align:top;background-color:#F3F3F3;border:1px solid #CCC;color:#3C3C3C;padding:6px; }
+.innercl_settingshr .innercl_pseudo_hr{font-size:.2em;border-bottom:1px dotted #999;margin:7px 0 10px;padding:0}
+.innercl_title{color:#4d4d4d;font-weight:bold}
+.acc_opbox a {	font-size: 12px;	color: #333333;	line-height: 20px;	text-decoration: none;}
+
+
+.groupAggregateDiv {
+	position: relative;
+	border: 1px solid #cccccc;
+	float: left;
+	width: 300px;
+	margin: 5px;
+background:#efefef;
+}
+
+.viewGroupButton {
+	display: block;
+border:1px solid
+}
+
+.viewGroupButton {
+	float: right;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.viewGroupButton a{
+	text-decoration: none;
+}
+
+.groupOwnerImage {
+	float: left;
+}
+
+.groupOwnerName {
+	position: relative;
+	top: 15px;
+}
+
+.groupInfoOwnerText {
+	display: inline;
+}
+
+.groupAggregateDivBottom {
+	padding: 5px;
+	border-top: 1px solid #777777;
+}
+
+#groupAggregateToolbar {
+	padding: 5px;
+	margin: 0px 5px 0px 5px;
+	border: 1px solid #BBBBBB;
+}
+
+#groupAggregateContainer {
+	width: 765px;
+	margin: 0px auto;
+}
+
+#groupAggForm{
+	margin: 0px;
+	padding: 0px;
+}
+.media-thumb {
+width: 82px;
+height: 82px;
+border: solid 0px black;
+display: block !important;
+background: no-repeat;
+background-position: 50% 50%;
+float: left;
+margin: 5px;
+}
+.media-thumb div {
+
+height: 82px;
+width: 82px;
+} 
+
+.groupInfoText {
+	display: block;
+	max-height:30px !important;
+	overflow-y:hidden;
+	}
+.groupNameTextLink {
+	font-size:16px;
+	font-weight:bold;
+	}
+.groupInfoText {
+	}

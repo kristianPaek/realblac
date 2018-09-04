@@ -1,0 +1,48 @@
+/**
+* Info: Main Software Button Styles
+*
+* @version  9.0
+* @created  Fri Sep 18 10:48:31 EEST 2008
+* @updated  Fri Sep 18 10:48:31 EEST 2008
+*/
+
+A.MainBtn, A.NormBtn, A.GreenMainBtn, A.RedMainBtn, input.MainBtn, input.NormBtn, input.GreenMainBtn {cursor:pointer;text-decoration: none;text-align:center;display:inline;vertical-align:baseline;margin-left:2px;padding:3px 4px;  overflow:hidden; font-family: Arial, Verdana, Helvetica, sans-serif; font-size:20px; }
+A.MainBtn, input.MainBtn {background:  0px -10px repeat-x;background-color:#EEEEEE;color:#000000;Border:1px solid #000000;}
+A.MainBtn:hover, input.MainBtn:hover{background:  0px -10px repeat-x;background-color:#ffffff;color:#000000;Border:1px solid #ff0461;}
+A.GreenMainBtn, input.GreenMainBtn {background: url( '../../images/DEFAULT/_buttons/bg-lt-greengrad.gif' ) 0px -10px repeat-x;background-color:#b9f75b;color:#4d1200;Border:1px solid #698d33;}
+A.GreenMainBtn:hover, input.GreenMainBtn:hover{background: url( '../../images/DEFAULT/_buttons/bg-lt-greengrad.gif' ) 0px -40px repeat-x;}
+A.NormBtn, input.NormBtn {background: url( '../../images/DEFAULT/_buttons/bg-grygradlarge.gif' ) 0px 0px repeat-x;color:#222;Border:1px solid #777;}
+A.NormBtn:hover, input.NormBtn:hover{background: url( '../../images/DEFAULT/_buttons/bg-grygradlarge.gif' ) 0px -50px repeat-x;}
+A.NormBtn:active {background: url( '../../images/DEFAULT/_buttons/bg-grygradlarge.gif' ) 0px -50px repeat-x;}
+A.RedMainBtn, input.RedMainBtn { background: url( '../../images/DEFAULT/_buttons/bg-lt-redgrad.gif' ) 0px -40px repeat-x; background-color: #ffffff; color:white; }
+A.RedMainBtn:hover, input.RedMainBtn:hover {background: url( '../../images/DEFAULT/_buttons/bg-lt-redgrad.gif' ) 0px -40px repeat-x; color:white;}
+
+/* CSS BUTTONS */
+a.ebutton {    background: transparent url('../../images/DEFAULT/_buttons/button_right.png') no-repeat scroll top right;     display: block;    float: left;    height: 34px;     margin-right: 6px;    padding-right: 20px;    text-decoration: none;    color: #000000;    font-family: Arial, Helvetica, sans-serif;    font-size:12px;    font-weight:bold;}
+a.ebutton span {    background: transparent url('../../images/DEFAULT/_buttons/button_left.png') no-repeat;     display: block;    line-height: 22px;    padding: 7px 0 5px 18px;  } 
+a.ebutton:hover span{    text-decoration:underline;}
+
+a.sbutton {    background: transparent url('../../images/DEFAULT/_buttons/button_right.png') no-repeat scroll top right;     display: block;    float: left;    height: 34px;     margin-right: 6px;    padding-right: 20px;    text-decoration: none;    color: #000000;    font-family: Arial, Helvetica, sans-serif;    font-size:12px;    font-weight:bold;}
+a.sbutton span {    background: transparent url('../../images/DEFAULT/_buttons/button_left.png') no-repeat;     display: block;    line-height: 22px;    padding: 7px 0 5px 18px;  } 
+a.sbutton:hover span{    text-decoration:underline;}
+
+a.pbutton {  float: left;  display: block;  margin: 0 0 0 5px;  padding: 0 5px 0 0;  text-decoration: none;  background-repeat: no-repeat;  background-position: right bottom;}
+a.pbutton > span {  display: block;  position: relative;  left: -5px;  height: 15px;  font-size: 13px;  color: #333;  text-decoration: none;  text-align: center;  background-repeat: no-repeat;  background-position: left top;}
+a.pbutton > span > span.icon {  display: block;  float: left;  width: 16px;  height: 16px;  margin-top: -1px;  background-position: left top;  background-repeat: no-repeat;}
+a.psmall.pbutton,a.psmall.pbutton > span {  background-image: url('../../images/DEFAULT/_buttons/bg-button-small.png');}
+a.psmall.pbutton > span {  padding: 6px 5px 3px 15px;  font-size: 12px;}
+
+/*---------------------------------------------------------------------------------------------------------------
+	BACKGROUND IMAGES
+---------------------------------------------------------------------------------------------------------------*/
+
+.TopVideos, .TopTour, .TopUpgrade, .TopSettings, .TopRegister, .TopMusic, .TopMessages, .TopMatches, .TopMap, .TopLogin, .TopLinks, .TopInvite, .TopGroups, .TopGames,
+.TopGallery, .TopForum, .TopFAQ, .TopContact, .TopAdverts, .TopChatRoom, .TopCalendar, .TopBlog, .TopArticles, .TopAffiliate, .TopAccount
+
+{ background: #C3DCF1;  display:block; line-height:175px; font-weight: normal; height:123px;  background: url(../../images/DEFAULT/inner_account_bar.jpg);}
+
+.TopVideos, .TopTour, .TopUpgrade, .TopSettings, .TopRegister, .TopMusic, .TopMessages, .TopMatches, .TopMap, .TopLogin, .TopLinks, .TopInvite, .TopGroups, .TopGames,
+.TopGallery, .TopForum, .TopFAQ, .TopContact, .TopAdverts, .TopChatRoom, .TopCalendar, .TopBlog, .TopArticles, .TopAffiliate, .TopAccount
+
+span { padding-left:20px; font-size:18px; color:#666666;}
+

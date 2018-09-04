@@ -1,0 +1,38 @@
+<script type="text/javascript">
+
+function confirmDelete(id,what){
+var mes,url='forum={$forum}&';
+if(what==1) { mes='{$l_areYouSureDeleteTopic}'; url=url+'action=deltopic&topic='+id;   } else { mes='{$l_areYouSureDeletePost}'; url=url+'action=delmsg&page={$page}&post='+id; }
+if(confirm(mes))
+document.location='{$main_url}/{$indexphp}'+url;
+}
+
+//-->
+</script>
+<tr align=center class={$bg}>
+<td class=caption1 valign="top"><br>
+
+<a href="{$main_url_tag}index.php?dll=profile&pId={$poster_id}" target="_parent"><span class=txtSm><img src="{$posterImage}" alt="" border="0" style="border:1px solid #000"></span><br>
+    <span class=username>{$topicAuthor}</span></a>
+</td>
+<td align=left class=caption1 valign="top">
+<div style="margin-left:15px;">
+	{$topic_reverse}
+
+	<a href="{$linkToTopic}" class="mediumtext">{$topicTitle}</a><br>
+
+<b class="b1f"></b><b class="b2f"></b><b class="b3f"></b><b class="b4f"></b><div class="contentf">
+<div>
+<span style="font-size:110%;">{$TopicText} <br><br> <img src="img/comments.png" align="absmiddle"> <a href="{$linkToTopic}">Read This Full Post </a> {$deleteThisTopic} </span>
+</div>
+
+</div><b class="b4f"></b><b class="b3f"></b><b class="b2f"></b><b class="b1f"></b>
+
+	&nbsp;<sup class="navCell">{$pageNavCell}</sup>
+	<div style="line-height:25px; color:#666666;"> {$l_lastAuthor} {$lastPostDate}</div>
+
+</div> 
+<td class=caption1> <span class="bigtext">{$numReplies}</span></td>
+</td>
+
+</tr>

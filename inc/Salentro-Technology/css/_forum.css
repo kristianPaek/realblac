@@ -1,0 +1,49 @@
+/**************************/
+/* 		FORUM STYLES	  */
+/**************************/
+body { background: #ffffff;  margin:0px; padding:0px;}
+.gbody{ font-family:Tahoma;}
+
+
+table.forums {font-family:Tahoma;border-bottom: 1px #693333 solid;color: #693333;border-collapse: collapse;text-align: left; margin: 0px 0px 0px 0px; width: 100%;} 
+.tbTransparent{font-family:Tahoma;width: 100%; background: transparent;font-size: 14px;line-height: 15px;text-align: left;}
+.txtSm{font-family:Tahoma;text-decoration: none;font-size: 18px;}
+.txtSm img {max-width:150px; width:100px; }
+.txtNr{font-family:Tahoma;text-decoration: none;font-size: 12px;}
+.views{color:#693333;}
+.warning{color: #000;font-family:Tahoma;font-size: 12px;font-weight: bold;}
+.navCell{font-family:Tahoma;font-size: 12px;}
+.selectTxt {font-family:Tahoma;font-size: 12px;background-color: #FFFFFF;}
+.limbb{list-style: circle;font-size: 12px;margin-left: 15px;}
+.inputButton {font-family:Tahoma;background: #FFFFFF;border-top: #CCCCCC 1px solid;border-right: #693333 1px solid;border-left: #693333 1px solid;border-bottom: #693333 1px solid;font-size: 10px;color: #000000;}
+.textForm {font-family:Tahoma;background: #FFFFFF;border-bottom: #693333 1px solid;border-left: #693333 1px solid;border-right: #693333 1px solid;border-top: #693333 1px solid;font-size: 12px;}
+
+td.caption1 {border-bottom: 1px #000000 dashed;font-size: 12px;line-height: 10px;padding-bottom: 1px;padding-left: 5px;padding-right: 5px;padding-top: 2px; line-height:25px} /* CHANGE BORDER */
+td.caption2 {background-color: #FFFFFF;border: 1px #693333 dotted;padding: 4px;height: 20px;font-size: 10px;font-weight: bold;line-height: 15px; line-height:30px;}
+td.caption3 {background-color: #F5F5F5;padding: 3px;height: 20px;font-size: 12px;line-height: 15px;}
+td.caption4 {
+
+background: #EAF0F7;
+padding-bottom: 2px;padding-left: 5px;padding-right: 5px;padding-top: 2px;font-size: 13px;font-weight: bold;color: #666666;line-height: 25px; height:30px; border-top:1px dashed #999999;} /* CHANGE TOP CELL */
+td.caption5 {background-color: #F5F5F5;padding: 4px;height: 20px;font-size: 12px;line-height: 15px;} /* POST BG COLOR */
+td.caption6 {background-color: #F5F5F5;border: 1px #E4EEF3 solid;padding: 4px;height: 18px;font-size: 12px;font-weight: bold;}
+
+.username{text-decoration: none;font-size: 12px;font-weight: bold;}
+.tbCel1{background: #ffffff;}
+.tbCel2{background: #ffffff;}
+.formStyle{margin: 0px;}
+.tbStBar{border: #CCCCCC 1px solid;margin: 1px;padding: 1px;background: #693333;font-size: 12px;}
+
+.mediumtext { font-size:175%; line-height:40px;}
+.bigtext { font-size:200%; color:#693333;}
+
+.b1f, .b2f, .b3f, .b4f{font-size:1px; overflow:hidden; display:block;}
+.b1f {height:1px; background:#ddd; margin:0 5px;}
+.b2f {height:1px; background:#ddd; margin:0 3px;}
+.b3f {height:1px; background:#ddd; margin:0 2px;}
+.b4f {height:2px; background:#ddd; margin:0 1px;}
+.contentf {background: #ddd; }
+.contentf div {margin-left: 5px;padding:10px;}
+.b1f, .b2f, .b3f, .b4f, .contentf { 
+	background: #E1EBF2; 
+}

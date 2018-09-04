@@ -1,0 +1,89 @@
+#GoBackButton { padding:5px; font-size:16px;}
+#TopCommentsBox { padding:10px; border:1px dashed #cccccc; background:#EBFFFF; margin-bottom:15px; line-height:30px;}
+#TopCommentsMainBox { background:#F9F9F9; border:1px solid #D0D9E0; padding:10px; min-height:700px;}
+/*  EMEETING QUICK COLOUR CHANGES
+-------------------------------------------------------*/
+
+a {	text-decoration: none; color:#333333;}
+#container {background: #297B7C;}
+ul.side-navigation li h3 {background: #DBF0D2;}
+#bodyBottom { background:#666666; color:white;}
+
+/*  EMEETING GALLERY
+-------------------------------------------------------*/
+
+#gallerycontent {	position:relative;	width:600px;float:left; margin-left:10px;	}
+#gallerycontent1 {	position:relative;width:600px; float:left; }
+
+.thumb, .thumb1 {	position:relative;	float:left;	width:180px;	margin:0 5px 7px 0;	overflow:hidden; margin-right:16px; height:300px; overflow:hidden;}
+.thumb a:link img, .thumb a:visited img, .thumb1 a:link img, .thumb1 a:visited img {	padding:7px;	border:1px solid #BBB;	width:150px;height:113px;  background:white;}
+.thumb a:hover img, .thumb1 a:hover img {	border:1px solid #000;}
+.thumb .themelabel, .thumb1 .themelabel {	font-size:12px;	margin:5px 0 0 10px;}
+.thumb .themelabel a:link, .thumb .themelabel a:visited, .thumb1 .themelabel a:link, .thumb1 .themelabel a:visited {	font-weight:normal;	color:#004C88;	text-align:center;}
+.thumb .themelabel a:hover, .thumb1 .themelabel a:hover {	color: #666666;}
+
+/*  EMEETING GALLERY
+-------------------------------------------------------*/
+
+.bar_save {	background-color: #E5F1F1;padding:3px; font-size:12px;}
+.submit input, .button-secondary, #login form .submit input, div.dashboard-widget-submit input, #edit-slug-buttons a.save {	background-color: #3D90D4;color: #ffffff;border-color: #62ADAE;	font-weight:bold;-moz-border-radius-bottomleft: 5px;border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;	border-bottom-right-radius: 5px; font-family: sans-serif; }
+.htmlarea {  padding:10px; border:2px dashed #cccccc; margin-top:20px;}
+.widefat td, .widefat th, .commentlist li {	border-bottom-color: #ccc;}
+.widefat thead, .thead {	background: #C3E1F9 url('../../inc/images/lay/sub_bg.jpg');	color: #ffffff; font-size:11px;}
+.widefat thead a, .thead a{color: #ffffff;}
+.widefat {	border-width: 0px;	border-style: solid;	border-collapse: collapse;	border-color:#EA6900;	width: 100%;	clear: both;	margin: 0;	background:white;}
+.widefat a {	text-decoration: none;}
+.widefat abbr {	white-space: nowrap;}
+.widefat td, .widefat th {	border-bottom-width: 1px;	border-bottom-style: solid;	border-bottom-color: #ccc;	font-size: 100%;	vertical-align: text-top;}
+.widefat td {	padding: 7px 15px 9px 10px;	vertical-align: top; font-size:12px;}
+.widefat th {	padding: 9px 15px 6px 10px;	text-align: left;	line-height: 1.3em; font-size:12px;}
+.widefat th a { color: #ffffff; }
+.widefat th input {	margin: 0 0 0 8px;	padding: 0;}
+.editbox {  background:#eeeeee; text-align:center; width:70px;}
+.widefat .num {	text-align: center;}
+ 
+
+/*  EMEETING PAGE NUMBERS
+-------------------------------------------------------*/
+
+#PageNums{border: 0px;float:right;background-color: inherit;}
+#PageNums a{	display:block;float:left;padding:3px 6px;margin:5px 10px 0 0;text-decoration:none;color:#fff;font-size: 12px;vertical-align: text-top;border:solid 1px #3F9999;background: #3F9999;color: white;font-weight: bold;}
+#PageNums a:hover{	color:#47739E;	background-color:#fff;}
+
+
+/*  EMEETING FORM DATA
+-------------------------------------------------------*/
+
+ul.form { margin: 0; padding-top: 15px; overflow:hidden; border:1px solid #B9D5D5; background:white; margin-bottom:20px;}
+ul.form li { margin: 0 0 5px !important; padding: 0 0 .8em !important; clear: left; }
+ul.form li p.note { font-size: .9em; margin-left: 210px; color: #666; margin-bottom: 5px; }
+ul.form li.buttons { margin-left: 130px !important; }
+ul.form li .tip {   font-size: 10px !important;  color: #777; line-height:23px; margin-bottom:10px; display:block; }
+.smiles { display:inline; border:5px;}
+ul.form li h3 { margin: 0 0 .5em; }
+ul.form label { display: block;   text-align: left; padding: 0 10px 10px 0;   font-size: 15px;  font-family: arial;  font-weight: bold;}
+ul.form label em { font-sizesi: .9em; margin-right: 5px;}
+ul.form label span { font-weight: normal; }
+ul.form textarea { width:330px;}
+.input {  border:2px solid #62ADAE; background:#F7F9FB; height:26px; font-size:13px; font-weight:bold; font-family: sans-serif; line-height:25px; color:#666666; }
+/* SELECT{  padding: 1px;  border: 1px solid #68902D;  margin: 5px;	font-size:13px;} */
+.CapTitle {  padding:3px; color: white; height:20px; display:block; font-weight:bold; font-size:12px;line-height:20px; background:#666; display:none;}
+.CapBody {  border:2px solid #efefef; padding:8px; background:white; } 
+.goLeft { float:left;line-height:20px;}
+.goRight { float:right;}
+ul.form .highlight { background-color:#E7FCF8; }
+ul.form .highlight input { background-color:white; color:black;}
+ul.form .highlight .tip { color: #ADAAAA; }
+
+.box_body {  padding:8px; font-size:80%; }
+.alerts li { color:#333; height:26px; }
+.alerts li a { color:#333; font-weight:bold;}
+
+
+/*  EMEETING SEARCH DROP DOWN AJAX
+-------------------------------------------------------*/
+
+div#UpdateSearch {      position:absolute;   width:150px; font-size:13px;font-weight:bold;    background-color:#4A96D4;    color: #ffffff;   border:1px solid #888; padding:0px;z-index:100;		}
+div#UpdateSearch ul {      list-style-type:none;      margin:0px;      padding:0px;}
+div#UpdateSearch ul li.selected { background-color: #ffffff; color:#666666; font-weight:bolder;}
+div#UpdateSearch ul li {   list-style-type:none;    display:block;      margin:0;      padding:2px;      height:22px;      cursor:pointer;}

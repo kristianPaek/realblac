@@ -1,0 +1,11 @@
+/* COMMENTS, MESSAGES AND GENERAL DATA FORMATTING FOR MEMBER PAGES*/
+#DisplayList ul ul li {	margin-bottom:4px;	border-right:0px;	border-top:0px;	border-bottom:1px solid #666;	border-left:1px solid #ccc;	background: #fff;	font-size:10px; min-height:65px; height:65px;	overflow:hidden;} /* */
+#DisplayList ul ul ol {	margin-bottom:4px;	border-right:0px;	border-top:0px;	border-bottom:1px solid #666;	border-left:1px solid #ccc;	background: #fff;	font-size:10px; height:65px;	overflow:hidden; } /* */
+.detailed_box { float:right; width:415px; height:70px; overflow:hidden; padding:5px; border:1px dotted #666; height:40px; }
+#detailed_search ul.details li {display:inline; line-height: 20px; font-size:12px; height:23px; overflow:hidden; margin-right:8px; }
+#detailed_search .menu_ops { background:#eee; height:27px; display: block; width:500px; padding-top:7px; }
+
+.but1 { padding:0px;  font-size:14px; font-weight:normal;}
+.pagination a  {height:67px }.pagination a  { margin-top:0px; }
+
+A.MainBtn, A.NormBtn, A.GreenMainBtn, input.MainBtn, input.NormBtn, input.GreenMainBtn { padding: 0px;  padding:5px;   width:auto;    overflow:visible;}

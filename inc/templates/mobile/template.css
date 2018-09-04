@@ -1,0 +1,235 @@
+/* page body
+---------------------------------------------------------------------------- */
+
+body { 
+	font-size:100%;
+	font-family: Arial, sans-serif;
+	color:#444444;
+	background: #000000;
+	padding: 5px 0 5px 0;
+	margin: 5px;
+}
+h1, h2, h3{
+	 
+	padding: 0;
+	margin: 0;
+	color:#707374;
+}
+p { color:#444444; }
+h2 {
+	font-size:21px;
+	font-weight:bold;
+	color:#707374; 
+	text-align:left;
+}
+h3 {
+	font-size:14px;
+	font-weight:bold;
+	color:#707374; 
+	text-align:left;
+}
+
+
+#MainPageBackground {   background-repeat: repeat-x;   background-position: bottom left;}
+.page_header, #page_container, #copyright_bar, #page_header { width: 320px;	 margin: 0 auto; padding:0px; display:block;}
+#page_header h1 a {	 display:block;	  float:left;	 overflow:hidden; margin-left: 15px;	  padding:0;	 border:0 !important;	 background-repeat: no-repeat; }
+#page_header .top_banner {	float:right;  	margin-right:15px;}
+#fullpage #main { 	padding-top: 0; margin:0px; float:right;}
+#fullpage #side { 	float: left; overflow:hidden; }
+#fullpage #side_box { margin-top:10px;  }
+
+#fullpage #main_content_wrapper {  		min-height:350px;  width:375px; }
+
+#splitpage #side { display:none;  }
+#splitpage #main {   margin: 0 auto; padding:0px; display:block; }
+#splitpage #main_content_wrapper {   min-height:375px; width: 320px;}
+
+
+
+/* MAIN HEADER BAR, OFTEN WHERE THE LOGO IS */
+.page_header { 	
+	background: #ffffff url('../../../inc/templates/mobile/images/header.jpg') repeat-x;  border:1px solid white; 
+}
+.page_header2 { 	
+	padding-left:8px;  
+}
+/* MAIN CONTAINER, SITES UNDER THE HEADER */ 
+#page_container { 
+	 background: white; display:block; border:1px solid white;
+}
+/* THIS IS THE INNER CONTENT WRAPPER, FILLS THE CONTENT SECTION NOT THE MENU BAR */
+#main_content_wrapper { 
+    margin-right:2px; 
+}
+
+#main_wrapper_bottom {
+	/*background: transparent url('../../../images/mobile/main_wrapper_bottom.jpg') no-repeat top right;  margin-right:5px;*/
+ 	height:49px; display:none; 
+}
+#top_banner { margin-top:30px; margn:0px; padding:0px; float:right;}
+#top_banner img { margin-right:20px;}
+
+
+/* page footer
+---------------------------------------------------------------------------- */
+
+#page_footer {	margin-bottom:0px; } 
+#page_footer .footer_menu { 	background: #FF0033; margin-bottom:0px;}
+.footer_tabs a { color: #FF0033; }
+#bottomBar{	color: #fff; background: #FF0033; border-top:1px solid #FF0033;}
+#bottomBar h4{ 	background-color: #DB3D31; color:#ffffff; }
+#bottomBar .col1 li, #links li {	border-bottom:1px dotted #ffffff;	}
+
+
+/* two main buttons
+---------------------------------------------------------------------------- */
+
+/*A.MainBtn, input.MainBtn {background: #ffffff; color:#ffffff; }*/
+/*A.NormBtn, input.NormBtn {background: url( '../../images/DEFAULT/_buttons/bg-grygradlarge.gif' ) 0px 0px repeat-x; }*/
+
+
+/* link styles
+---------------------------------------------------------------------------- */
+
+a { color:#333333; }
+a:active { color:#333333; }
+
+/* GREY TABLE BACKGROUND AND BAR ON THE HOME PAGE, CALENDAR AND CLASSADS PAGE
+---------------------------------------------------------------------------- */
+
+ .inner_nav_bar { background:  #DDDDDD; color:#ffffff; font-weight:bold; }
+.inner_nav_body { border:1px solid #eeeeee; background: url('../../../images/DEFAULT/_acc/home_style2_tbg2.jpg') repeat-x bottom left; }
+
+/* SIDE MENU BAR STYLES
+---------------------------------------------------------------------------- */
+
+#side_box { margin-left:15px; }
+#side_box .menu_box_body, .menu_box_body1, .album-gallery li, #FolderBody  .gallery li{ background: #ffffff;border-left:1px solid #C8C8C8;  border-right:1px solid #C8C8C8;   border-bottom:1px solid #C8C8C8;   
+}
+#side_box .menu_box_body { border-top:1px solid #C8C8C8; }
+#side_box .menu_box_body, #side_box .menu_box_title {  } 
+#side_box .menu_side span { color:#333333;}
+#side_box .menu_box_title, .menu_box_title1 { background:  #909090 ; color:#ffffff; font-weight:bold; height:21px; line-height:29px;}
+#side_box .menu_box_title span, .menu_box_title1 span { display:none; }
+
+/* TOP MENU BAR AND SUBBAR
+---------------------------------------------------------------------------- */
+
+.menu {  margin-left:0; background: #000000;border-top:2px solid white; }
+.sub_menu {	background: #000000; }
+.menu, .sub_menu { width:940px; margin:left:0px; margin-right:0px;   }
+ 
+/* MENU BOX EXPAND 
+---------------------------------------------------------------------------- */
+
+.menu_expand {	background: #23A8D7 url("../../../images/DEFAULT/_acc/menu_background_expand.gif") no-repeat 0 0; cursor:pointer;}
+.menu_noexpand {background: #23A8D7 url("../../../images/DEFAULT/_acc/menu_background_noexpand.gif") no-repeat 0 0; cursor:pointer;}
+.menu .i1 { margin-left:10px;}
+.tabs li a{	color: #fff; margin-right:2px; font-size:100%;line-height:40px;}
+.tabs li a:hover, .tabs li .selected { 	color: #fff;}
+.tabs li .selected {}
+.tabs li a:hover { color: #cccccc;} 
+.sub_tabs li a {color:#666; }
+.sub_tabs li a:hover { border-bottom:2px solid #660C15;  } 
+
+
+/* MEMBERS ONLINE TEXT IN MENU BAR
+---------------------------------------------------------------------------- */
+
+.onlinenow a { color:#666666; font-size:12px;}
+
+/* ACCOUNT PAGE STYLES
+---------------------------------------------------------------------------- */
+
+#Acc_Heading { margin-top:5px;}
+#Acc_Heading .title { color:#ffffff; font-size:130%; margin:0px;}
+#Acc_Heading .text { font-size:110%; color:#ffffff; }
+#Acc_Heading .a1 img { border:3px solid #ffffff;}
+/* MAIN ACCOUNT BOXEX */
+.CapTitle { 	background:#ffffff; display:none;}
+.CapBody { 	background: #F1F1F1 url('../../../images/DEFAULT/_acc/inner_box_bg.gif') repeat-x; 	border:1px solid #cccccc;}
+/* SEARCH RESULTS BAR */
+#eMeetingContentBox #Results { background: #e1e1e1; border-bottom:1px solid #eeeeee;}
+.search_display_on { background:#EEF7FF;}
+.search_display_off { background:transparent;}
+
+
+/* INNER BACKGROUND IMAGES DISPLAYED AT THE TOP OF MOST PAGES
+---------------------------------------------------------------------------- */
+
+.TopVideos, .TopTour, .TopUpgrade, .TopSettings, .TopRegister, .TopMusic, .TopMessages, .TopMatches, .TopMap, .TopLogin, .TopLinks, .TopInvite, .TopGroups, .TopGames,
+.TopGallery, .TopForum, .TopFAQ, .TopContact, .TopAdverts, .TopChatRoom, .TopCalendar, .TopBlog, .TopArticles, .TopAffiliate, .TopAccount
+
+{ background: #C3DCF1;  display:block; line-height:22px; font-weight: normal; height:28px;  background: url(../../images/DEFAULT/inner_account_bar.jpg);}
+
+.TopVideos, .TopTour, .TopUpgrade, .TopSettings, .TopRegister, .TopMusic, .TopMessages, .TopMatches, .TopMap, .TopLogin, .TopLinks, .TopInvite, .TopGroups, .TopGames,
+.TopGallery, .TopForum, .TopFAQ, .TopContact, .TopAdverts, .TopChatRoom, .TopCalendar, .TopBlog, .TopArticles, .TopAffiliate, .TopAccount
+
+span { padding-left:20px; font-size:18px; color:#666666;}
+
+
+.TopVideos, .TopTour, .TopUpgrade, .TopSettings, .TopRegister, .TopMusic, .TopMessages, .TopMatches, .TopMap, .TopLogin, .TopLinks, .TopInvite, .TopGroups, .TopGames,
+.TopGallery, .TopForum, .TopFAQ, .TopContact, .TopAdverts, .TopChatRoom, .TopCalendar, .TopBlog, .TopArticles, .TopAffiliate, .TopAccount
+span { color:#ffffff; font-weight:bold; }
+
+.TopVideos, .TopTour, .TopUpgrade, .TopSettings, .TopRegister, .TopMusic, .TopMessages, .TopMatches, .TopMap, .TopLogin, .TopLinks, .TopInvite, .TopGroups, .TopGames,
+.TopGallery, .TopForum, .TopFAQ, .TopContact, .TopAdverts, .TopChatRoom, .TopCalendar, .TopBlog, .TopArticles, .TopAffiliate, .TopAccount
+ {  background: url(../../../inc/templates/mobile/images/inner_top_menu.jpg) no-repeat;  }
+
+
+/* PROFILE PAGE STYLES
+---------------------------------------------------------------------------- */
+
+#ProfileHead { background: #E54539 url('../../../images/DEFAULT/profile_backdrop.png') repeat-x top left;} /* LEAVE IMAGE FOR PROFILE BACKDROP */
+#ProfileUsernameBox h1, #ProfileUsernameBox h2, #ProfileUsernameBox p {  color:white; }
+#profile_nav_bar { background: #8BA6C3; }
+.profile_tabs  li a { color:white;}
+.profile_tabs .selected a{ color:#E54539; }
+#profile_menu_display { 	background:#eeeeee;	border: 1px solid #999999;}
+.profile_box_title { background-color: #eeeeee; border:1px solid #999999; width:300px; font-size:10px; margin-left:0px; border-bottom:0px;}
+.profile_box_title .goL h1 { color:#666666; }
+.profile_box_body { border: 1px solid #999999;  width:300px; margin-left:0px;}
+
+#ProfileOptionsBox { border:1px solid #999999; background:#eeeeee; }
+
+
+/* home page styles
+---------------------------------------------------------------------------- */
+
+/* SLIDER BACKGROUND COLOR */
+.pagination a:hover, .pagination a.selected{ background: #325386; color:white;}
+.pagination a  { background: #4C9DDF; border-bottom:1px solid white; color:white; }
+.sliderwrapper { height:273px; }
+.HomeSearch { color:white; }
+.HomeMembers { color:white;}
+.s5_searchbox { color:#666666; }
+
+/* CONTROL BAR MENU
+---------------------------------------------------------------------------- */
+
+#MenuControlHead .user_name { color:white;  }
+#MenuControlHead { background: url('../../../images/DEFAULT/_acc/control_t1.png') no-repeat; }
+#MenuControlList li { background: #333333 url('../../../images/DEFAULT/_acc/control_icon.gif') no-repeat; }
+#MenuControlBody .ListDisplay {background: url('../../../images/DEFAULT/_acc/control_tbg.gif'); }
+#MenuControlBody .ListDisplay_text {color:white; background:black;}
+#MenuControlBody .user_status {  color:white; }
+#MenuControlBody { background:black; color:white; }
+#MenuControlBot {  background: url('../../../images/DEFAULT/_acc/control_t3.gif') no-repeat; }
+#MenuControlBot a { color:#666666; }
+
+/* rounded coners
+---------------------------------------------------------------------------- */
+
+.b1f, .b2f, .b3f, .b4f, .contentf { background: #efefef; color: #333333;}
+
+#copyright_bar { background: #707374; }
+#copyright_bar a { color:white; }
+
+
+.logo_height a { text-decoration:none; cursor:pointer; }
+.logo_height {  height:55px;}
+#ImageLogo{ width:320px;  font-weight: bold;  background-repeat: no-repeat; background-position: top left; min-height:20px; float:left; margin-top:5px; margin-left:5px;  }
+#ImageLogo .p1 { margin-top:10px; margin-left:48px; font-size:150%;}
+#ImageLogo .p3 { margin-top:10px; font-size:28px;} /* no logo */
+#ImageLogo .p2 { font-size:14px;font-style:italic;}
+

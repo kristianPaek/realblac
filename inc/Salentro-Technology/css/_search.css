@@ -1,0 +1,59 @@
+.SearchOps {}
+.SearchOps li { border-bottom:0px dashed #cccccc; line-height:20px;}
+.SearchOps li a { text-decoration:none; }
+.SearchOps .sub { font-size:12px;}
+.SearchOps .top { background:#eeeeee; }
+.SearchOps .Stop { font-size:12px; font-weight:bold;}
+
+/* CSS Document */
+#searchblock {  clear: both;  }
+#searchblock h3 {  font-size: 218%;  font-style: normal;  font-weight: normal;  padding: 0px;  margin: 0px 0px 19px 0px;  }
+#searchblock h4 {  font-size: 80%;  font-style: normal;  font-weight: normal;  padding: 0px;  margin: 11px 0px 11px 0px;  }
+.workblock{  width:100%;  float:left;}
+.workblocksingle {  width:100%;   min-height:180px;  margin:0 5px 0 0;}
+.workblock .image {	width:180px;	height:100px; background:white; }
+.workblockleft, .workblockright{  width:300px;  float:left;  min-height:180px;  margin:0 20px 0 0; background:url('../../images/DEFAULT/search_basic.png');margin-bottom:10px;}
+.galleryviewleft, .galleryviewright{  width:125px;  float:left;  min-height:130px;  margin:0 20px 0 0;}
+* html .galleryviewleft, * html .galleryviewright{  height:130px;  }
+
+.workblockright{  margin:0 0 0 1px;  }
+* html .workblockleft, * html .workblockright{  height:190px; }
+.workblock p {  line-height: 1.4em;  margin: 0px 0px 0px 0px;  padding: 0px 0px 0px 0px;  }
+
+#basic_search_nav { width:300px; height:28px; margin-bottom:5px; line-height:26px;}
+#basic_search_nav .username { float:left; margin-top:2px; margin-left:5px;  font-weight:bold; font-size:14px;}
+#basic_search .imageframe { width: 129px; float:left;  overflow:hidden; margin-top:5px; margin-left:5px;  }
+#basic_search .imageframe .thumb{ margin:10px; overflow:hidden;}
+#basic_search .imagedetails {  width: 153px; float:right; height:125px; padding:5px;}
+#basic_search ul.details  {	margin: 0;		padding: 0px;		list-style: none; color:#333333;}
+#basic_search ul.details li {	display: block; 	line-height: 20px; font-size:12px; height:25px; overflow:hidden;}
+#basic_search ul.details a {text-decoration: none; text-align: center;		font-size: 11px;	font-weight: bold; 	color: #fff;}
+#basic_search ul.details .last { border-top:1px solid #666;}
+#basic_search ul.details .first { font-weight:bold; font-size:13px;}
+#basic_search ul.details .last img { margin-right:5px; margin-top:3px; }
+
+#gallery_search { width:115px; height:110px; overflow:hidden; padding:10px; text-align:center;}
+#gallery_search .thumb { max-width:115px; }
+
+#detailed_search_nav { width:575px; height:25px; background:#666; color:white; margin-bottom:5px; overflow:hidden; font-weight:bold; }
+#detailed_search_nav .username { float:left; margin-top:2px; margin-left:5px; }
+#detailed_search .imageframe {background:white; width: 120px; float:left; height:130px; overflow:hidden; border:1px solid #666;}
+#detailed_search .imageframe .thumb{ max-width:115px;}
+#detailed_search .imagedetails { background:#fff; border:1px solid #999; width: 430px; float:right; margin-right:5px; height:122px; padding:5px;}
+#detailed_search ul.details  {	margin: 0;		padding: 0px;		list-style: none; width:430px; overflow:hidden; }
+#detailed_search ul.details li {	display: block; 	line-height: 20px; font-size:12px; height:23px; overflow:hidden;}
+#detailed_search ul.details ul li {  margin-left:5px; display:inline; }
+#detailed_search ul.details ul li a { border:1px solid #666; padding:3px; background:#666; color:white; }
+#detailed_search ul.details a {text-decoration: none; text-align: center;		font-size: 11px;	font-weight: bold; 	color: #fff;}
+#detailed_search ul.details .last { border-top:1px solid #666; height:35px;}
+#detailed_search ul.details .first { font-weight:bold; font-size:13px;}
+#detailed_search ul.details .last img { margin-right:5px; margin-top:3px; }
+.detailed_box { float:right; width:270px; height:70px; overflow:hidden; padding:5px; border:1px dotted #666; }
+#detailed_search .menu_ops { background:#eee; height:27px; display: block; float: left; width:500px; padding-top:7px; }
+#dhtmltooltip{position: absolute;left: -300px;width: 150px;border: 1px solid black;padding: 2px;background-color: lightyellow;visibility: hidden;z-index: 100;}
+#dhtmlpointer{position:absolute;left: -300px;z-index: 101;visibility: hidden;}
+
+.highlighted1 { background: url('../../images/DEFAULT/hightlighted1.png') no-repeat;}
+.highlighted1off { background: url('../../images/DEFAULT/hightlighted1off.png') no-repeat;}
+.highlighted2 { background: url('../../images/DEFAULT/hightlighted2.png') no-repeat;}
+.highlighted3 { background: url('../../images/DEFAULT/hightlighted3.png') no-repeat;}

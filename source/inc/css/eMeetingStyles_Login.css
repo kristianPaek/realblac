@@ -1,0 +1,216 @@
+body, form, p, h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #ddd;
+	font-family: Verdana, sans-serif;
+	color: #000;
+}
+a:link, a:visited, a:active {
+	color: #00f;
+}
+a:hover {
+	background-color: #00f;
+	color: #fff;
+	padding: 1px;
+	text-decoration: none;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 200%;
+	color: #fff;
+	line-height: normal;
+}
+p {
+	padding-bottom: 1.5em;
+}
+
+form label {
+	text-align: right;
+	width: 105px;
+	float: left;
+	padding: 8px 2px 0 0;
+}
+form input {
+	font-family: Verdana, sans-serif;
+	padding: 3px;
+	margin: 3px;
+}
+#the_form {
+	height: 165px;
+}
+.errorInput {
+	background-image: url(../input-errorbg.gif);
+	background-repeat: no-repeat;
+	background-color: #fcc;
+	border: 1px solid #f00;
+	padding: 4px;
+}
+
+.boxTop, .boxMain, .boxBot {
+	font-size: 0;
+	width: 610px;
+	height: 25px;
+	margin: 0 auto;
+}
+.boxTop {
+	background-image: url(../images/login/loginpage-bgtop.gif);
+	margin-top: 50px;
+}
+.boxMain {
+	background-image: url(../images/login/loginpage-bgtile.gif);
+	font-size: .75em;
+	line-height: 1.4em;
+	width: 560px;
+	height: auto;
+	padding: 0 25px;
+}
+.boxBot {
+	background-image: url(../images/login/loginpage-bgbot.gif);
+}
+
+.b1, .b2, .b3, .b4 {
+	height: 1px;
+}
+.b1 {
+	margin: 0 5px;
+}
+.b2 {
+	margin: 0 3px;
+}
+.b3 {
+	margin: 0 2px;
+}
+.b4 {
+	margin: 0 1px;
+	height: 2px;
+}
+.bar {
+	padding: 10px;
+}
+
+.col_left {
+	width: 350px;
+	padding: 15px 0 0 10px;
+	float: left;	
+}
+.col_right {
+	text-align: center;
+	width: 200px;
+	float: right;
+}
+.submit_but {
+	margin: 6px 2px;
+	vertical-align: middle;
+}
+
+
+.clearb {
+	clear: both;
+}
+
+div.logo {
+	height: 155px;
+}
+div.col_right > div.logo {
+	height: auto;
+	min-height: 155px;
+}
+
+.box_secure {
+	padding-top: 65px;
+	font-size: 11px;
+	line-height: 15px;
+	color: #999;
+	text-align: left;
+}
+.box_secure img {
+	float: left;
+	margin: 6px 7px 0 0;
+}
+
+.hl {
+	background-color: #ff9;
+}
+
+
+
+.notifyBox {
+	background-color: #d9ffb2;
+	color: #000;
+	border: 1px solid #88c331;
+	margin-top: 15px;
+	padding: 10px;
+}
+.notifyBox h3 {
+	font-size: 19px;
+	color: #4c8700;
+}
+.notifyBox.bad {
+	background-color: #ffc9bb;
+	border: 1px solid #e07d63;
+}
+.notifyBox img {
+	float: left;
+	margin-right: 10px;
+}
+.notifyBox .msg {
+	float: left;
+	width: 450px;
+}
+
+
+#welcome {
+	background-color: #ff9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000;
+	border-bottom: 1px solid #000;
+	display: none;
+}
+#welcome div.welcome_msg {
+	width: 760px;
+	padding: 10px 0 20px 0;
+	margin: 0 auto;
+}
+#welcome img {
+	float: left;
+	margin-right: 10px;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #000;
+	padding: 15px 0;
+}
+
+
+.disabledEmail {
+	font-weight: bold;
+	padding: 8px 0;
+}
+
+
+/* styles for genericLoginRedirect.php page */
+#loginpage_moved {
+	padding-top: 15px;
+	text-align: center;
+}
+#loginpage_moved h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+#loginpage_moved strong {
+	font-weight: normal;
+}
+
+.bar, .b1, .b2, .b3, .b4 {
+	background-color: #409EA0;
+}
+#messages { margin-top:10px;}
+.message-good {  padding: 10px;  margin: 0;  margin-bottom: 5px;  display: block;  border: 1px solid #009B2B;  color: #000;  font-weight:bold; background: #D2FFDE;}
+.message-bad {  padding: 10px;  margin: 0;  margin-bottom: 5px;  display: block;   border: 1px solid #666;  background: #ab1628;  color: #fff; font-weight:bold;}
+
+

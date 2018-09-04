@@ -1,0 +1,51 @@
+ #eMeetingTableWrapper {
+	width:100%; overflow:auto; min-height:460px; background:#eeeeee;
+}
+#eMeetingTable {
+	border-width: 0px;
+	border-style: solid;
+	border-collapse: collapse;
+	border-color: #EA6900;
+	width: 100%;
+	height:100%;
+	clear: both;
+	margin: 0;
+	background:white;
+}
+
+#eMeetingTable td, th {
+	padding: 0.5em;
+	border: 1px solid #CCC;
+	white-space: nowrap;
+}
+ 
+#eMeetingTable thead, tfoot {
+	background-color: #DDD;
+}
+
+#eMeetingTable tr {
+	height:37px;
+}
+#eMeetingTable tr.rowodd {
+	background-color: #FFF;
+}
+
+#eMeetingTable tr.roweven {
+	background-color: #F2F2F2;
+}
+
+ 
+.eMeetingTableBar { 
+
+	border-width: 2px;
+	border-style: solid;
+	border-collapse: collapse;
+	border-color: #EA6900;
+	width: 100%;
+	clear: both;
+	margin: 0;
+	background:#FA8301;
+	padding:3px; margin-bottom:10px;
+}
+#TableAlert { font-weight:bold; color:white;}
+.eMeetingTableBar .input {  border:1px solid #FA8301; background:#F7F9FB; font-size:13px; height:25px; margin-right:10px; font-weight:bold; font-family: sans-serif; line-height:25px; color:#666666; }

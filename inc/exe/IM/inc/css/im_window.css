@@ -1,0 +1,66 @@
+/* CSS Document */
+*.html, body {
+	font-family:verdana, sans serif;
+	background: #EEEEEE;
+	margin:0px;
+	padding:0px;
+}
+#isTyping { font-size:10px; color:#666;margin-top:8px; height:28px;}
+#im_top_bar { height:28px; background: url('../../inc/images/top_bar.jpg') repeat-x;}
+#im_top_bar span { float:right;  }
+#im_top_bar span img { margin-right:10px; }
+
+iframe{
+	font-family:verdana, sans serif;
+	font-size: 12px;
+}
+#im_content {
+	background-color: #ffffff; width:400px; overflow:auto; font-size:100%; border:1px solid #cccccc; height:230px;
+}
+#im_message_window { margin:10px;}
+#im_sidebar{ 
+	border:1px solid #cccccc; background: white; height:400px; 
+}
+
+#im_sidebar .panel {
+
+	background: url('../../inc/images/sidebar_panel_bg.jpg') repeat-x; height:28px; font-size:12px;  line-height:23px;
+}
+#im_sidebar .panel a { text-decoration:none; margin-left:5px; color:#666666; background: url('../../inc/images/panel_arrow.jpg') center left no-repeat;}
+
+#im_sidebar .menu_options {	margin: 0;	padding: 10px;list-style: none; color:#333333; padding-top:0px; }
+#im_sidebar .menu_options li {	display: block; line-height: 30px; height:30px;   border-bottom:1px dashed #666666;}
+#im_sidebar .menu_options li a { margin-left:25px; display: block;text-decoration: none; color:#333333; font-size:12px;}
+#im_sidebar .menu_options li span { margin-left:30px;}
+#im_sidebar .menu_options .start {	display: block; line-height: 15px;  background: none; height:20px;}
+#im_sidebar .menu_options .start span { margin-left:0px;}
+
+#im_sidebar .menu_options .rm1 { background: url(../images/user.png) no-repeat; background-position: 0% 50%; }
+#im_sidebar .menu_options .rm2 { background: url(../images/add.png) no-repeat; background-position: 0% 50%; }
+
+
+
+#foot {
+	height: 30px;
+	padding-top: 10px;
+}
+.hide {
+	display: none;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+.im_wrapper{
+	padding: 7px; width: 340px;
+}
+.totxt {
+	color: #333; display: block; font-weight: bold;
+}
+.ftxt{
+	color: blue; display: block;
+}
+.chat_time{
+	font-size: 10px;
+	color:#666666;
+}

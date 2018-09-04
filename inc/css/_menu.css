@@ -1,0 +1,62 @@
+/* side bar menu
+---------------------------------------------------------------------------- */
+
+#side_box { margin:0px; padding:0px;}
+#side_box .menu_box_title, .menu_box_title1 { font-size:90%; display:block; padding:3px 10px 7px; height:38px; overflow:hidden; font-weight:bold; line-height:24px; }
+#side_box .menu_box_title span,.menu_box_title1 span { float:right; margin-top:-3px; margin-right:-10px}
+#side_box .menu_box_body, .menu_box_body1 { display:block; padding:5px; margin-bottom:8px;  overflow:hidden; }
+#side_box ul.menu_side {	margin: 0;	padding: 5px; list-style: none;  }
+#side_box .menu_side li {	display: block; line-height: 25px;  background: url(../../images/DEFAULT/_icons/16/bullet_go.png) no-repeat; background-position: 0% 50%; }
+#side_box .menu_side li a { margin-left:25px; display: block;text-decoration: none;   font-size:12px; height:30px; }
+#side_box .menu_side .last { border-bottom:0px;}
+#side_box .menu_side span { margin-left:10px; color:#666;}
+#side_box .menu_side li strong { margin-right:10px;}
+#side_box .menu_advertisement { padding:5px; margin-top:10px;}
+
+/*  sidebar for profile, calendar, groups
+---------------------------------------------------------------------------- */
+
+#Profile_SideBar {   font-size: 16px;
+  
+    margin-right: 0;
+ 
+  position: relative;
+   }
+#Profile_SideBar p { margin:0px; }
+#Profile_SideBar h1 { background:#909090; color: white; font-size:12px;padding:5px; }
+hr{  border: 0;  width: 100%;  height: 0;  border-top: solid 1px #dfdfdf;  background: none;}
+#Profile_SideBar strong { font-weight:bold}
+
+
+/* top menu bar
+---------------------------------------------------------------------------- */
+
+ul.tabs {	margin: 0;		padding: 0px;		list-style: none;  }
+.tabs li {	display: block; 	line-height: 35px;		float: left;}
+.tabs li a {	width:95px; display: block;		text-decoration: none; text-align: center;	 color: #fff; font-size:16px; font-weight:bold;}
+.sub_menu, .menu {	width: 100%;	margin-left: auto;		margin-right: auto; height:45px; width:900px;}
+.sub_menu { height: 45px;	 }
+
+.sub_tabs {	margin: 0;		padding: 0px;		list-style: none; height:35px;  }
+.sub_tabs li {	display: block; 	line-height: 30px;		float: left;	margin-top:6px;	}
+.sub_menu .first { margin-left:10px;}
+.sub_tabs li a{	color:#3b5d14; 					text-decoration:none; 					margin:0 5px; 					padding-right:10px;					height:23px; 					line-height:23px; 					display:block; 					float:left; 					}
+.sub_tabs li a span{ padding-left:10px; cursor:pointer; font-size:13px;}
+
+
+.sub_sub_menu {	width: 100%;  margin-top:5px; margin-left:10px; float:left; height:75px;}
+ul.sub_sub_tabs {height: 25px;padding: 1px;list-style: none; border-bottom:1px dotted #C9C9C9; border-top:1px dotted #C9C9C9; overflow:hidden;}
+.sub_sub_tabs li {	display: block; float: left;line-height:25px; font-size:11px; 	}
+.sub_sub_tabs li a {background: transparent url('../../images/DEFAULT/_acc/nav_arrow_top.gif') no-repeat; background-position: 0% 50%;}
+.sub_sub_tabs li a { width:106px; display: block; text-decoration: none; text-align: center; font-weight: bold; color: #666; background-position: 0% 50%; }
+.sub_sub_tabs li .first { background:none; width:65px;}
+.sub_sub_tabs li .active { color: red;}
+.onlinenow { float:right; color:#fff; font-weight:bold;margin-right:15px; margin-top:7px;}
+
+/* ajax menu box on the messages page
+---------------------------------------------------------------------------- */
+
+div#update {      position:absolute;      width:250px;      background-color:white;      color: black;      border:1px solid #888;      margin:0px;      padding:0px;}
+div#update ul {     list-style-type:none;      margin:0px;      padding:0px;}
+div#update ul li.selected { background-color: #ffb;}
+div#update ul li {      list-style-type:none;      display:block;      margin:0;      padding:2px;      height:22px;      cursor:pointer;}

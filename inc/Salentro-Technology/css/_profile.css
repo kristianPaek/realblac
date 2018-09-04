@@ -1,0 +1,199 @@
+/***************************************************************************
+ *
+ *	 PROJECT: eMeeting Dating Software
+ *	 VERSION: 8
+ *	 LISENSE: OWN / LEASED (http://www.datingscripts.co.uk/license.php)
+ *
+ *	 This program is a commercial software product and any kind of usage
+ *	 means agreement to the eMeeting software License Agreement.
+ *
+ *	 This notice MUST NOT be removed from the code.   
+ *
+ *   Copyright 2006-2007 eMeeting Ltd.
+ *   http://www.datingscripts.co.uk/
+ *
+ ***************************************************************************/
+
+#ProfileHead { background-position: 200px 0px; }
+
+#ProfileUsernameBox {
+margin-left:10px; margin-top:20px;
+}
+
+ul.profile_tabs {	margin: 0;		padding: 0px;		list-style: none;   }
+.profile_tabs li {	display: block; 	line-height: 35px;		float: left; background:transparent; margin-right:2px; }
+.profile_tabs li a {	width:90px; display: block;		text-decoration: none; text-align: center;		font-size: 13px;		font-weight: bold; 	color: #666;}
+.profile_tabs .first { margin-left:2px; }
+.profile_tabs .selected { background:white;  }
+
+
+#Acc_Heading { display:none;}
+
+
+/* profile page top section
+---------------------------------------------------------------------------- */
+ 
+#eMeeting { width:660px}
+#eMeeting.user .info{  float: left;  width: 472px; }
+#eMeeting.user .info p{  margin: 10px 0 0 0;  color: #999; font-size:11px;}
+#eMeeting.user .info h1{  font-size: 200%; line-height:30px;}
+#eMeeting.user .info h2{  font-size: 130%; }
+#eMeeting.user .info strong{  color: #666;}
+#eMeeting.user .actions{  float: right;  width: 160px;  margin: 0;  padding: 1px 0 1px 20px;  border-left: solid 1px #e4e4e4; }
+#eMeeting.user .actions{  padding-bottom: 7px;}
+#eMeeting.user .actions > div{  margin: 5px 0; }
+#eMeeting.user .actions p{  margin: 8px 0 0 0;}
+#eMeeting.user .account_tabs ul { margin-top:20px;}
+
+
+/* buttons
+---------------------------------------------------------------------------- */
+
+#eMeeting.user .actions a.pbutton {    margin-bottom: 5px;  min-width: 140px;  cursor: pointer;}  
+#eMeeting.user .actions a.pbutton > span {    text-align: left;  }  
+#eMeeting.user a.message.pbutton span.icon {  margin-right:5px;    background-image: url('../../images/DEFAULT/_icons/icon-email.png');  }
+#eMeeting.user a.nudge.pbutton span.icon {margin-right:5px;    background-image: url('../../images/DEFAULT/_icons/icon_nudge.png');  }
+#eMeeting.user a.friend.pbutton span.icon {margin-right:5px;    background-image: url('../../images/DEFAULT/_icons/icon-nav-friends.png');  }
+
+
+/* grey gradiant bar
+---------------------------------------------------------------------------- */
+
+div.content.sidebar {    min-height: 0 !important;    margin-top: 0px;    padding-top: 5px !important;    padding-bottom: 0 !important;    background: url('../../images/DEFAULT/_acc/bg_other.png') right repeat-y;  }  
+div.content.sidebar > div.gradient {       background: url('../../images/DEFAULT/_acc/bg_other_bottom.png') right bottom no-repeat;  }  
+div.content.sidebar div.other {        background: url('../../images/DEFAULT/_acc/bg_other_top.png') right top no-repeat;  }
+
+/*  sidebar
+---------------------------------------------------------------------------- */
+
+#Profile_SideBar { font-size:12px;}
+#Profile_SideBar p { margin:0px; }
+#Profile_SideBar h1 { background:#666666; color: white; font-size:13px;padding:0px;  width:190px; }
+hr{  border: 0;  width: 100%;  height: 0;  border-top: solid 1px #dfdfdf;  background: none;}
+#Profile_SideBar strong { font-weight:bold}
+#ProfileOptionsBox { border:1px solid #999999; background:#eeeeee; margin-bottom:0px; margin-top:0px; padding:1px; }
+/*  mainbar
+---------------------------------------------------------------------------- */
+
+#Profile_MainBar { font-size:13px; overflow:hidden; }
+#Profile_MainBar h1 { font-size:15px;  padding:0px; margin:0px; }
+#Profile_MainBar .goL {  float: left; width:300px;}
+#Profile_MainBar .goR { float:right; width:150px; text-align:left; font-size:15px;}
+
+#Profile_SideBar .goL {  float: left; width:130px;}
+#Profile_SideBar .goR { float:left; width:55px; text-align:right; font-size:11px;}
+
+#ProfileInnerBackground { padding:10px; background:#eee; font-size:12px; }
+#ProfileInnerBackground a { color: #333333; text-decoartion:none;
+#profile_wrapper h4 { 	font-size:20px;}
+.profile_box_title { width:412px;	padding:5px; 	font-size:12px;}
+#Profile_SideBar .profile_box_title {	width:190px;	padding:5px; 	font-size:12px; border:0px; margin:0px; padding:0px; } 
+
+.profile_box_body {	padding:1px;	overflow:hidden;	width:410px;}
+#Profile_SideBar .profile_box_body {	padding:5px;	overflow:hidden;	width:190px; border:0px;}
+.marginTop{	 margin-top:15px;}
+
+
+/**
+* Info: Profile Top Menu Bar Css
+*
+* @version  9.0
+* @created  Fri Sep 18 10:48:31 EEST 2008
+* @updated  Fri Sep 18 10:48:31 EEST 2008
+*/
+
+
+
+
+
+#profile_menu_display {height:150px; display:block; margin-top:5px;}
+#profile_menu_display .username { padding-top:10px; font-size:250%; font-weight:bold; margin-left:30px; text-align:left; margin-top:20px;}
+#profile_menu_display .headline { padding-top:10px; padding-bottom:40px; font-size:90%; font-weight:bold; margin-left:30px; text-align:left; }
+#profile_menu_display .profile_menu {		height: 35px;		margin-left: auto;		margin-right: auto;	}
+#profile_menu_display ul.profile_tabs {	margin: 0;		padding: 0px;		list-style: none;  }
+#profile_menu_display .profile_tabs li {	display: block; 	line-height: 35px;		float: left; margin-right:5px;	}
+#profile_menu_display .profile_tabs li a {	width:120px; display: block;		text-decoration: none; text-align: center;		font-size: 11px;		font-weight: bold; }
+#profile_menu_display .profile_tabs .first { margin-left:3px;  }
+
+
+
+#profile_menu_display_right {height:150px; display:block; background-position: top right;}
+/**
+* Info: Profile Right Menu Bar
+*
+* @version  9.0
+* @created  Fri Sep 18 10:48:31 EEST 2008
+* @updated  Fri Sep 18 10:48:31 EEST 2008
+*/
+
+
+#profile_menu_right_top { background: url(../../images/DEFAULT/_pro/profile_menu_right_top.png) no-repeat; height: 13px;}
+#profile_menu_right_bot { background: url(../../images/DEFAULT/_pro/profile_menu_right_bot.png) no-repeat; height: 53px; margin-bottom:10px; }
+#profile_menu_right {padding:1px; background: url(../../images/DEFAULT/_pro/profile_menu_right_mid.png) repeat-y; width:440px; overflow:hidden;}
+#profile_menu_right .menu_options {	margin: 0;	padding: 15px;list-style: none; color:#333333; }
+#profile_menu_right .menu_options li {	display: block; line-height: 30px; height:30px;   border-bottom:1px dashed #666666;}
+#profile_menu_right .menu_options li a { margin-left:25px; display: block;text-decoration: none; color:#333333;}
+#profile_menu_right .menu_options li span { margin-left:30px;}
+#profile_menu_right .menu_options .start {	display: block; line-height: 15px;  background: none; height:20px;}
+#profile_menu_right .menu_options .start span { margin-left:0px;}
+
+#profile_menu_right .menu_options .rm1 { background: url(../../images/DEFAULT/_acc/add.png) no-repeat; background-position: 0% 50%; }
+#profile_menu_right .menu_options .rm2 { background: url(../../images/DEFAULT/_acc/add.png) no-repeat; background-position: 0% 50%; }
+#profile_menu_right .menu_options .rm3 { background: url(../../images/DEFAULT/_acc/add.png) no-repeat; background-position: 0% 50%; }
+#profile_menu_right .menu_options .rm4 { background: url(../../images/DEFAULT/_acc/add.png) no-repeat; background-position: 0% 50%; }
+#profile_menu_right .menu_options .rm5 { background: url(../../images/DEFAULT/_acc/add.png) no-repeat; background-position: 0% 50%; }
+#profile_menu_right .menu_options .rm6 { background: url(../../images/DEFAULT/_acc/add.png) no-repeat; background-position: 0% 50%; }
+
+ul.profile_menu_right_small {	background:white; font-size:12px; border:1px solid #666666; padding:5px; max-height:300px; overflow:auto;}
+ul.profile_menu_right_small li {	color:#999999; line-height:27px; display:block; clear:both;}
+ul.profile_menu_right_small li span {	color:#333333;}
+
+
+
+/**
+* Info: Profile Description / Field Values
+*
+* @version  9.0
+* @created  Fri Sep 18 10:48:31 EEST 2008
+* @updated  Fri Sep 18 10:48:31 EEST 2008
+*/
+
+
+
+
+ul.profile_details_menu {	margin: 0;	padding: 5px; list-style: none;  }
+.profile_details_menu li {	line-height: 25px;  background-position: 0% 50%; float:right;  border-bottom:1px dashed #ccc; width:289px; margin-right:20px; font-size:12px;}
+.profile_details_menu .last { border-bottom:0px;}
+.profile_details_menu span { margin-left:10px; color:#999;}
+.profile_details_menu li strong { margin-right:10px;}
+
+/**
+* Info: Profile Calendar
+*
+* @version  9.0
+* @created  Fri Sep 18 10:48:31 EEST 2008
+* @updated  Fri Sep 18 10:48:31 EEST 2008
+*/
+
+#calendar {	width: 95%;	padding: 0;	margin: 0;	border-left: 1px solid #A2ADBC;	font: normal 12px/20px;	color: #616B76;	text-align: center;	background-color: #fff;}
+#calendar .nav, .nav a {font: bold 18px;	color: #fff;		text-align: center;	text-decoration: none;}	
+#calendar caption {	margin: 0;	padding: 0;	width: 141px;	color: #fff;		font: bold 12px;	text-align: center;}
+#calendar th {	font: bold 11px/20px;color: #616B76;	background: #D9E2E1;	border-right: 1px solid #A2ADBC;	border-bottom: 1px solid #A2ADBC;	border-top: 1px solid #A2ADBC;}
+#calendar .today, td.today a, td.today a:link, td.today a:visited {	color: #F6F4DA;	font-weight: bold;	background: #DF9496;}
+#calendar td {	border-right: 1px solid #A2ADBC;	border-bottom: 1px solid #A2ADBC;	width: 20px;	height: 20px;	text-align: center;}
+#calendar td a {	text-decoration: none;	font-weight: bold;	display: block;}
+#calendar td a:link, td a:visited {		color: #608194;}
+#calendar td a:hover, td a:active {	color: #6aa3ae;}
+
+/**
+* Info:Default Styles
+*
+* @version  9.0
+* @created  Fri Sep 18 10:48:31 EEST 2008
+* @updated  Fri Sep 18 10:48:31 EEST 2008
+*/
+
+#profile_wrapper, #profile_menu_display .profile_tabs .first { background: #ffffff; }
+#profile_menu_display .profile_tabs .first {	border-top:5px solid #ffffff; }
+#profile_menu_display .profile_tabs li { background:transparent;}
+

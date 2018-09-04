@@ -1,0 +1,159 @@
+<html>
+
+<head>
+  <title>Insert Image</title>
+
+<script type="text/javascript" src="popup.js"></script>
+
+<script type="text/javascript">
+
+window.resizeTo(400, 100);
+// GLOBAL
+function idShowHide(obj) {
+     var el = document.getElementById(obj);
+     if ( el.style.display != "none" ) {
+     el.style.display = 'none';
+     } else {
+     el.style.display = 'block';
+     }
+}
+function Init() {
+  __dlg_init();
+window.resizeTo(500,500);
+  var param = window.dialogArguments;
+/*  if (param) {
+      document.getElementById("f_url").value = param["f_url"];
+      document.getElementById("f_alt").value = param["f_alt"];
+      document.getElementById("f_border").value = param["f_border"];
+      document.getElementById("f_align").value = param["f_align"];
+      document.getElementById("f_vert").value = param["f_vert"];
+      document.getElementById("f_horiz").value = param["f_horiz"];
+      window.ipreview.location.replace(getURL(param.f_url));
+  }*/
+  document.getElementById("f_url").focus();
+};
+
+function getURL(url) {
+	if (!/^https?:\/\//i.test(url) && !/^\//.test(url)) {
+		var base = window.opener.document.URL;
+		base = base.replace(/\/([^\/]+)$/, '/');
+		url = base + url;
+	}
+	return url;
+};
+
+function onOK() {
+  var required = {
+    "f_url": "You must enter the URL"
+  };
+  for (var i in required) {
+    var el = document.getElementById(i);
+    if (!el.value) {
+      alert(required[i]);
+      el.focus();
+      return false;
+    }
+  }
+  
+  var fields = ["f_url", "f_alt", "f_align", "f_border",
+                "f_horiz", "f_vert"];
+  var param = new Object();
+  for (var i in fields) {
+    var id = fields[i];
+    var el = document.getElementById(id);
+    param[id] = el.value;
+  } 
+  __dlg_close(param);
+  return false;
+};
+
+function onCancel() {
+  __dlg_close(null);
+  return false;
+};
+
+function onPreview() {
+
+	var validext = new Array("jpg","peg","bmp","gif","png");
+	var url = document.getElementById( 'f_url' ).value; 
+	var val = url;
+	var len = url.length;
+
+	// lets do some checks
+
+	if( (len == 0 ) || ( len == undefined ) )
+	{
+
+		alert('Please enter a link to an image file. It should begin with http://');
+		return false;
+	}
+	else{
+	
+		val = val.toLowerCase(); 
+		var ext = val.substr(len-3,3);
+		for(var i=0; validext.length > i ; i++){
+			if (ext.indexOf(validext[i])!= -1){
+	
+
+					idShowHide('DisplayPre');
+					
+					  if (!url) {
+						alert("You have to enter an URL first");
+						f_url.focus();
+						return false;
+					  }
+					  window.ipreview.location.replace(getURL(url));
+					  return true;
+					};
+ 
+			}
+		}
+
+		alert('The link you entered is not one of the accepted file types.\n Please check the link carefully and try again.');
+		return false;
+	} 
+
+
+
+</script>
+
+<style type="text/css">
+html, body {  background: ButtonFace;  color: ButtonText;  font: 12px;  margin: 0px;  padding: 0px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+body { padding: 5px;  background:#eeeeee;}
+table {  font: 12px Verdana;}
+form p {  margin-top: 5px;  margin-bottom: 5px;}
+.fl { width: 9em; float: left; padding: 2px 5px; text-align: right; }
+.fr { width: 6em; float: left; padding: 2px 5px; text-align: right; }
+fieldset { padding: 0px 10px 5px 5px; }
+select, input, button { font: 12px Verdana; }
+button {   }
+.space { padding: 2px; }
+.title { background: #666666; color: #ffffff; font-weight: bold; font-size: 12px; padding: 3px 10px; margin-bottom: 10px;  }
+form { padding: 0px; margin: 0px; }
+</style>
+
+</head>
+
+<body onload="Init()">
+<form action="" method="get">
+<div class="title">Image Link ( Formats: JPG,PNG, BMP, GIF) </div>
+<input type="text" name="url" id="f_url" style="width:75%"   title="Enter the image URL here" />
+<button name="preview" onclick="onPreview(); return false;" title="Preview the image in a new window">Preview</button>
+<div id="DisplayPre" style="display:none;">
+    Image Preview:<br />
+    <iframe name="ipreview" id="ipreview" frameborder="0" style="border : 1px solid gray;" width="400" height="300" src=""></iframe><br>
+ <button type="button" name="ok" onclick="return onOK();">Save Image</button><br>
+
+</div>
+
+<input type="hidden" value="" id="f_alt">
+<input type="hidden" value="" id="f_align">
+<input type="hidden" value="" id="f_border">
+<input type="hidden" value="" id="f_horiz">
+<input type="hidden" value="" id="f_vert">
+
+
+
+</form>
+</body>
+</html>

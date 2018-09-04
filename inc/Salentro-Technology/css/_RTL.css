@@ -1,0 +1,12 @@
+/* RIGHT TO LEFT STYLES FOR LANGUAGE ARABIC */
+
+*[dir="ltr"] { direction: ltr; unicode-bidi: embed }
+
+*[dir="rtl"] { direction: rtl; unicode-bidi: embed }
+
+bdo[dir="ltr"] { direction: ltr; unicode-bidi: bidi-override }
+
+bdo[dir="rtl"] { direction: rtl; unicode-bidi: bidi-override } 
+
+p, div { direction: rtl; }
+.BorderBox2, .overviewBox { background:none; }
