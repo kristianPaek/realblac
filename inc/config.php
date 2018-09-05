@@ -290,12 +290,19 @@ define('PATH_MUSIC','/home/realblac/public_html/meet/uploads/music/');
 define('PATH_FILES','/home/realblac/public_html/meet/uploads/files/');
 
 
-define('WEB_PATH_IMAGE','http://realblacklove.com/meet/uploads/images/');
-define('WEB_VERIFY_IMAGE','http://realblacklove.com/meet/newadmin/inc/crop/crop.php?f=');
-define('WEB_PATH_IMAGE_THUMBS','http://realblacklove.com/meet/uploads/thumbs/');
-define('WEB_PATH_VIDEO','http://realblacklove.com/meet/uploads/videos/');
-define('WEB_PATH_MUSIC','http://realblacklove.com/meet/uploads/music/');
-define('WEB_PATH_FILES','http://realblacklove.com/meet/uploads/files/');
+// define('WEB_PATH_IMAGE','http://realblacklove.com/meet/uploads/images/');
+// define('WEB_VERIFY_IMAGE','http://realblacklove.com/meet/newadmin/inc/crop/crop.php?f=');
+// define('WEB_PATH_IMAGE_THUMBS','http://realblacklove.com/meet/uploads/thumbs/');
+// define('WEB_PATH_VIDEO','http://realblacklove.com/meet/uploads/videos/');
+// define('WEB_PATH_MUSIC','http://realblacklove.com/meet/uploads/music/');
+// define('WEB_PATH_FILES','http://realblacklove.com/meet/uploads/files/');
+
+define('WEB_PATH_IMAGE','http://localhost/realblac/uploads/images/');
+define('WEB_VERIFY_IMAGE','http://localhost/realblac/newadmin/inc/crop/crop.php?f=');
+define('WEB_PATH_IMAGE_THUMBS','http://localhost/realblac/uploads/thumbs/');
+define('WEB_PATH_VIDEO','http://localhost/realblac/uploads/videos/');
+define('WEB_PATH_MUSIC','http://localhost/realblac/uploads/music/');
+define('WEB_PATH_FILES','http://localhost/realblac/uploads/files/');
  // New Link End Here
 
 //////////////////////////////////////////////////////////////////////////////////////////

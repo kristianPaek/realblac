@@ -15,7 +15,7 @@ define('DB_PASS','');              // MySQL password
 define('DB_BASE','realblac_emeeting4');              // MySQL database
 // define('DB_DOMAIN','http://www.realblacklove.com/Rbl2/meet/');
 
-define('DB_DOMAIN','http://localhost/realblacklove');
+define('DB_DOMAIN','http://localhost/realblac/newadmin');
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // FLASH DOMAIN SETTINGS

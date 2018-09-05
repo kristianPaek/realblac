@@ -38,7 +38,7 @@ class DB
         $this->persistent = $persistent;
         $this->database   = $database;
         $this->prefix     = $prefix;
-		$this->language    = $language;
+        $this->language    = $language;
     }
 
 
@@ -49,10 +49,11 @@ class DB
         {
             if( $this->persistent )
             {
-                $this->handle = @mysql_pconnect($this->hostname, $this->username, $this->password) or $DIDNT_WORK =true;
+                $this->handle = mysql_pconnect($this->hostname, $this->username, $this->password) or $DIDNT_WORK =true;
             }
             else
             {
+                // $this->handle = @mysqli_connect($this->db_host, $this->db_user, $this->db_password, $this->db_name, $this->db_port);
                 $this->handle = @mysql_connect($this->hostname, $this->username, $this->password) or $DIDNT_WORK =true;
             }
 			

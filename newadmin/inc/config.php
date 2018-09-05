@@ -831,7 +831,9 @@ $TimeDifference = $CurrentTime - $_SESSION['keychecker_time'];
  
 if( ($TimeDifference > 300 && isset($_REQUEST['n']) ) ){
 
-	$mycondb = str_replace("newadmin/","",dirname(__FILE__)).'/config_db.php';
+
+	// $mycondb = str_replace("newadmin/","",dirname(__FILE__)).'/config_db.php';
+	$mycondb = str_replace("newadmin\\","",dirname(__FILE__)).'\config_db.php';
 	require_once($mycondb);
 
 	$pos = strpos(KEY_ID, "TRIAL_");

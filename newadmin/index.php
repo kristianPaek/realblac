@@ -85,7 +85,8 @@ if(isset($_POST['do'])){
 											if(!isset($_SESSION['admin_level'])){ $_SESSION['admin_level']=1; }
 											$_SESSION['admin_auth']	="yes";
 										    
-											 echo '<script>window.location.href = "http://realblacklove.com/Rbl2/meet/newadmin/index_updating.php";</script>';
+											// echo '<script>window.location.href = "http://realblacklove.com/Rbl2/meet/newadmin/index_updating.php";</script>';
+											echo '<script>window.location.href = "http://localhost/realblac/newadmin/index_updating.php";</script>';
 											exit();
 									}
 								
