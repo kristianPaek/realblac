@@ -533,7 +533,7 @@ elseif($action == "SEND_WINK"){
     $sendto 	= $_POST['sendto_username']; 	    // user id
 
     include_once("fun_message.php");
-    $result = SendWinkMessageNew($sendfrom,$sendto);
+    $status = SendWinkMessageNew($sendfrom,$sendto);
 	
 		
     $userID = $DB->Row("SELECT id,email,username FROM members WHERE username='".$sendfrom."' LIMIT 1");
@@ -541,7 +541,7 @@ elseif($action == "SEND_WINK"){
 
 	$device = $DB->Row("select * from notification where uid='".$CurrentRel['id']."' LIMIT 1");
 
-	$message=$sendfrom.' winked you';
+    $message=$sendfrom.' winked you';
 	
 	    if($device['os'] == "iOS") {
         $UDID = array("id" => $device['udid']);
@@ -618,7 +618,7 @@ elseif($action == "SEND_WINK"){
        // $result = $gcm->send_notification_new($registatoin_ids, $message);
 			
     }
-    echo json_encode(array("message" => "SUCCESS", "method" => "SEND_WINK", "status"=>"Wink sent!"));
+    echo json_encode(array("message" => "SUCCESS", "method" => "SEND_WINK", "status"=>$status));
 }
 elseif($action == "GETTING_FAVORITE_LIST"){
     $user_id = $_POST['user_id'];

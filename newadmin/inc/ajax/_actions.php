@@ -613,6 +613,10 @@ $i++;
 
 	} break;
 
+	case "ReactiveAll": {
+		$DB->Update("UPDATE members SET members.visible='yes'");
+	} break;
+
 	case "EditRow": {
 
 	if(ADMIN_DEMO == "yes"){ print "Disabled in Demo Mode"; return; }
@@ -697,7 +701,6 @@ $i++;
 	$value = trim(strip_tags($_GET['value']));
 	$type = trim(strip_tags($_GET['type']));
  	$div = trim(strip_tags($_GET['div']));
- 
 	switch($type){
 
 	case "membership": {
@@ -752,6 +755,23 @@ $i++;
 	{
 		$value = 'active';
 		$DB->Update("UPDATE members SET active='".$value."',packageid='3' WHERE id='".$id."' LIMIT 1");
+
+		$result = $DB->Query("SELECT files.bigimage FROM files WHERE files.uid=".$id);
+		while ($Data = $DB->NextRow($result)) {
+			$image_path = WEB_PATH_IMAGE.$Data['bigimage'];
+			$main_photo = imagecreatefromjpeg($image_path);
+			$verify_photo = imagecreatefrompng(WEB_ASSET_IMAGE."verified_photo.png");
+			$tmp1 = imagecreatetruecolor(120, 120);
+			$tmp2 = imagecreatetruecolor(120, 120);
+			$width1 = imagesx($main_photo);
+			$height1 = imagesy($main_photo);
+			$width2 = imagesx($verify_photo);
+			$height2 = imagesy($verify_photo);
+			imagecopyresampled($tmp1, $main_photo, 0, 0, 0, 0, 120, 120, $width1, $height1);
+			imagecopyresampled($tmp2, $verify_photo, 0, 0, 0, 0, 70, 15, $width2, $height2);
+			imagecopymerge($tmp1, $tmp2, 50, 105, 0, 0, 70, 15, 75);
+			imagejpeg($tmp1, PATH_IMAGE.$Data['bigimage']);			
+		}
 		SendTemplateMail($Data, 17);
 	}
 	else

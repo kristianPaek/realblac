@@ -3,7 +3,7 @@
 <html><head>
 <title><?=$admin_layout_header['title'] ?> - <?=$_SESSION['admin_name'] ?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=<?=$admin_layout_header['charset'] ?>">
-
+<script src="inc/js/Ajax.js" type="text/javascript"></script>
 <?php print Header_LoadScripts($_REQUEST['n'], $_GET['p']) ?>
 
 <?php  print Header_LoadCSS($_REQUEST['n'], $_GET['p']) ?>
@@ -186,6 +186,7 @@
 <?php if(isset($Plugin_Title) && !isset($PageLang[$_GET['p'].'_*']) ){ print '<b style="color: #3E8A8B; font-size:20px; float:left">'.$Plugin_Title.'</b>'; } ?>
 </li>
 				<?php if($_SESSION['admin_level'] ==1 || ( isset($_SESSION['admin_super_user']) && $_SESSION['admin_super_user'] == "yes" ) ){ ?>	
+				<li><a href="javascript:ReactiveAll();" class="home"><?=$admin_layout_nav['12'] ?></a></li>				
 				<li><a href="maintenance.php"  class="home"><?=$admin_layout_nav['11'] ?></a></li>				
 				<? if(isset($_SESSION['admin_super_user']) && $_SESSION['admin_super_user'] =="yes"){ ?><li><a href="admins.php"><?=$admin_layout_nav['10'] ?></a></li><? } ?>
 				<?php } ?>		 

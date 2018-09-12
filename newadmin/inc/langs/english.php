@@ -819,6 +819,7 @@ $admin_layout_nav = array(
 		"11a" => "System Backup",
 		"11b" => "License Keys",
 		"11c" => "System Updates",
+	"12" => "Reactive All"
 );
 
 // MEMBERS PAGE

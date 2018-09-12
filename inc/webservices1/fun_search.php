@@ -13,7 +13,7 @@ function GetProfiles($id, $pageGET, $This_Page, $getData="",$request_type = ""){
         $data = $DB->Row("SELECT liveEmail, liveEdit, liveDelete FROM members_admin WHERE username='".eMeetingOutput($privacy['username'])."' LIMIT 1");
         $site_moderator_approve = $data['liveEmail'];
     }
- $checkBlock = "SELECT if(to_uid = '".$id."', uid, to_uid) as mk FROM members_network WHERE (uid='".$id."' OR to_uid = '".$id."') AND approved ='yes'";
+ $checkBlock = "SELECT if(to_uid = '".$id."', uid, to_uid) as mk FROM members_network WHERE (uid='".$id."' OR to_uid = '".$id."') AND approved ='yes' AND type=3";
 
 	$queryyy = mysql_query($checkBlock);
 	
@@ -649,7 +649,7 @@ $UserDataM	= implode("','", $UserData1);
 
 //print $QueryTotal;
 
-
+    
     $totalResults = $DB->Row($QueryTotal);
 
     if($RunExtra == "" && $totalResults['total'] > 500000){
@@ -771,7 +771,7 @@ $UserDataM	= implode("','", $UserData1);
     $fp = fopen('query.txt', 'w');
     fwrite($fp, $QQ);
     fclose($fp);
-
+    
 
     $result = $DB->Query($QQ);
 

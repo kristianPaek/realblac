@@ -283,7 +283,8 @@ define('USERS_TABLE','phpbb_users');
 
  // New Link Starts Here
 
-define('PATH_IMAGE','/home/realblac/public_html/meet/uploads/images/');
+// define('PATH_IMAGE','/home/realblac/public_html/meet/uploads/images/');
+define('PATH_IMAGE','E:/1.Work/RealBlackLove/realblac/uploads/images/');
 define('PATH_IMAGE_THUMBS','/home/realblac/public_html/meet/uploads/thumbs/');
 define('PATH_VIDEO','/home/realblac/public_html/meet/uploads/videos/');
 define('PATH_MUSIC','/home/realblac/public_html/meet/uploads/music/');
@@ -297,12 +298,13 @@ define('PATH_FILES','/home/realblac/public_html/meet/uploads/files/');
 // define('WEB_PATH_MUSIC','http://realblacklove.com/meet/uploads/music/');
 // define('WEB_PATH_FILES','http://realblacklove.com/meet/uploads/files/');
 
-define('WEB_PATH_IMAGE','http://localhost/realblac/uploads/images/');
-define('WEB_VERIFY_IMAGE','http://localhost/realblac/newadmin/inc/crop/crop.php?f=');
-define('WEB_PATH_IMAGE_THUMBS','http://localhost/realblac/uploads/thumbs/');
-define('WEB_PATH_VIDEO','http://localhost/realblac/uploads/videos/');
-define('WEB_PATH_MUSIC','http://localhost/realblac/uploads/music/');
-define('WEB_PATH_FILES','http://localhost/realblac/uploads/files/');
+define('WEB_ASSET_IMAGE', 'http://192.168.6.150/realblac/newadmin/images/');
+define('WEB_PATH_IMAGE','http://192.168.6.150/realblac/uploads/images/');
+define('WEB_VERIFY_IMAGE','http://192.168.6.150/realblac/newadmin/inc/crop/crop.php?f=');
+define('WEB_PATH_IMAGE_THUMBS','http://192.168.6.150/realblac/uploads/thumbs/');
+define('WEB_PATH_VIDEO','http://192.168.6.150/realblac/uploads/videos/');
+define('WEB_PATH_MUSIC','http://192.168.6.150/realblac/uploads/music/');
+define('WEB_PATH_FILES','http://192.168.6.150/realblac/uploads/files/');
  // New Link End Here
 
 //////////////////////////////////////////////////////////////////////////////////////////

@@ -16,7 +16,7 @@ $CheckLength= strlen($ShowPassword['password']);
 				LEFT JOIN members_template ON ( members_template.uid = members_privacy.uid )
 				LEFT JOIN members_data ON ( members.id = members_data.uid )
 				LEFT JOIN package ON ( members.packageid = package.pid )
-		  		WHERE ( members.username = '".$username."' OR members.email='".$username."' ) ";
+				  WHERE ( members.username = '".$username."' OR members.email='".$username."' ) ";
     if((D_MD5 ==1) && ($CheckLength !==32)){
 		define('OW_PASSWORD_SALT', '4f94930cd4ff3');
         $myhash = hash('sha256', OW_PASSWORD_SALT . $password);
@@ -31,7 +31,7 @@ $CheckLength= strlen($ShowPassword['password']);
 	
 	else{
         $sql .="AND members.password = '".$password."' LIMIT 1";
-    }
+	}
 
     $result = $DB->Row($sql);
     
@@ -61,7 +61,7 @@ $verify11 = mysql_fetch_assoc( mysql_query($verify) );
 
         }else{
 
-            CheckUpgradeNew($result['id'], $result['packageid']);
+			CheckUpgradeNew($result['id'], $result['packageid']);
             $users_date = setSessionNew($result, 1);
             return array("message" => "SUCCESS","status"=> "SUCCESS","verify_status"=>$result['verify_status'],"user_id"=>$result['id'], "overviewData" => $users_date, "method" => "LOGIN");
         }
@@ -313,7 +313,7 @@ $TotalAge = $difference->y;
 		else{
 			$popular_members1 = $DB->Query("SELECT DISTINCT  winkmessagessend.wink_from,winkmessagessend.wink_to,winkmessagessend.onlydate,members.id,members_data.gender,members_data.em_m5z20131006,members_data.em_85820081128,members_data.age,members_data.uid,members.username,members.packageid,members.firstname,members.popular,members.active,files.bigimage,files.approved,files.uid FROM `winkmessagessend` LEFT JOIN members ON winkmessagessend.wink_to= members.id LEFT JOIN files ON winkmessagessend.wink_to=files.uid LEFT JOIN members_data ON members.id=members_data.uid WHERE (winkmessagessend.onlydate >= DATE_SUB(CURDATE(),INTERVAL 14 DAY) AND winkmessagessend.wink_from !='0' AND members.active ='active' AND members.packageid !='70' AND members.packageid !='68' AND files.default='1' AND members.id !='".$userid."' AND members_data.gender ='".$Gender."' AND members_data.age <='".$enddate."' AND  members_data.age >='".$startdate."' AND members.id NOT IN('".$UserDataM."')) OR (members.popular ='yes' AND members.packageid !='70' AND members.packageid !='68' AND members.id NOT IN('".$UserDataM."')) GROUP BY winkmessagessend.wink_to ORDER BY winkmessagessend.wsid DESC LIMIT 50");
 		  }
-	 	}
+		 }
 		
 		$popular1 = array();
 		while ($Pmebers = $DB->NextRow($popular_members1)) 
@@ -409,7 +409,7 @@ $TotalAge = $difference->y;
 							   );
 			}
 		}
-	
+
     $notifications = $DB->Query("select content from notification_board");
     $notification = array();
     while ($Data = $DB->NextRow($notifications)) {

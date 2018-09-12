@@ -161,6 +161,10 @@ function ChangeYesNo(yesNo, id, field){
 	Timer_Icon('TableAlert');
 	eMeetingDo('inc/ajax/_actions.php?action=ChangeYesNo&id='+id+'&yesno='+yesNo+'&table='+table+'&field='+field,"TableAlert");
 }
+function ReactiveAll() {
+	Timer_Icon('TableAlert');
+	eMeetingDo('inc/ajax/_actions.php?action=ReactiveAll',"TableAlert");
+}
 function eMeetingShowLinkList(fid, div){
 
 	Timer_Icon(div);

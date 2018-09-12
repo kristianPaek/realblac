@@ -1028,7 +1028,7 @@ function MakeTable($Data){
 
 	if($Counter % 2){ $BGC="roweven"; $BG_C="transparent"; }else { $BGC="rowodd"; }
 	print '<tr align="center" id="tr_'.$Counter.'" class="'.$BGC.'"  onmouseover="this.style.backgroundColor=\'#DAEFFF\';" onmouseout="this.style.backgroundColor=\'#ffffff\';"><td style="width:30px;"><input name="d'.$Counter.'" type="checkbox" value="on"><input type=hidden value="'.$Data[eMeetingTableStringKeys($GLOBALS['SEARCH_DATA']['tb_deletevalue'], $GLOBALS['SEARCH_DATA']['tb_data_name'])].'" name="id'.$Counter.'" class="hidden"></td>';
-	 
+
 	$i=0; foreach($GLOBALS['SEARCH_DATA']['tb_data'] as $value){ 
  
 		if(substr($value,-2) =="id" && $GLOBALS['SEARCH_DATA']['tb_hideID'] ==true) {  }else{

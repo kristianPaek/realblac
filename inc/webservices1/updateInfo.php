@@ -14,8 +14,21 @@ function updatePassword($user_id,$cpassword,$npassword) {
     global $DB;
     $pw = $DB->Row("SELECT password FROM members WHERE id= ( '".$user_id."' ) LIMIT 1");
 define('OW_PASSWORD_SALT', '4f94930cd4ff3');
-    $myhash = hash('sha256', OW_PASSWORD_SALT . $cpassword);
-    $myhash_new = hash('sha256', OW_PASSWORD_SALT . $npassword);
+
+    $CheckLength= strlen($pw['password']);
+    if((D_MD5 ==1) && ($CheckLength !==32)){
+        $myhash = hash('sha256', OW_PASSWORD_SALT . $cpassword);
+        $myhash_new = hash('sha256', OW_PASSWORD_SALT . $npassword);
+    }
+    elseif((D_MD5 ==1) && ($CheckLength == 32)){
+        $myhash = md5($cpassword);
+        $myhash_new = md5($npassword);
+    }
+	
+	else{
+        $myhash = $cpassword;
+        $myhash_new = $npassword;
+	}
      if(isset($_GET['t']) && $_GET['t']==1){
 
          echo"<pre>";
